@@ -10,9 +10,9 @@
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-left">
-        <span>服务热线：<a href="tel:4000000000">400-000-0000</a></span>
+        <span>服务热线：<a href="tel:0317-4623118">0317-4623118</a></span>
         <span class="sep">|</span>
-        <span>邮箱：<a href="mailto:contact@zrxmachinery.com">contact@zrxmachinery.com</a></span>
+        <span>邮箱：<a href="mailto:zrx8828@126.com">zrx8828@126.com</a></span>
       </div>
       <div class="topbar-right">
         <a class="lang active" href="index.html">中文</a>
@@ -22,36 +22,199 @@
     </div>
   </div>
 
+  <!-- 导航 -->
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <div class="brand-text">
-          <div class="brand-name">中润轩机械</div>
-          <div class="brand-sub">Hebei Zhongrunxuan Machinery Equipment Co., Ltd.</div>
-        </div>
-      </a>
-      <nav class="nav">
+  <img class="brand-logo" src="assets/img/logo.svg" alt="中润轩机械">
+  <div class="brand-text">
+    <div class="brand-name">中润轩机械</div>
+    <div class="brand-sub">Hebei Zhongrunxuan Machinery Equipment Co., Ltd.</div>
+  </div>
+</a>
+
+
+      <nav class="nav" aria-label="主导航">
         <a class="nav-link" href="index.html">首页</a>
-        <a class="nav-link" href="about.html">关于我们</a>
-        <a class="nav-link active" href="products.html">产品中心</a>
+
+        <div class="nav-dd" data-dd>
+          <a class="nav-link" href="about.html">关于我们</a>
+          <div class="dd-panel">
+            <a class="dd-item" href="about.html#intro">公司简介</a>
+            <a class="dd-item" href="about.html#capability">制造能力</a>
+            <a class="dd-item" href="about.html#honor">资质荣誉</a>
+            <a class="dd-item" href="about.html#culture">企业文化</a>
+          </div>
+        </div>
+
+        <div class="nav-dd" data-dd>
+          <a class="nav-link" href="products.html">产品中心</a>
+          <div class="dd-panel dd-grid">
+            <a class="dd-item" href="products/water-treatment.html">水处理设备与系统</a>
+            <a class="dd-item" href="products/bag-filter.html">布袋除尘与烟气治理</a>
+            <a class="dd-item" href="products/blast-furnace-gas.html">高炉煤气净化系统</a>
+            <a class="dd-item" href="products/gas-flaring-recovery.html">煤气大放散回收系统</a>
+            <a class="dd-item" href="products/sintering-model.html">烧结系统工艺模型</a>
+            <a class="dd-item" href="products/complete-equipment.html">成套环保设备</a>
+            <a class="dd-item" href="products/custom-solution.html">非标定制解决方案</a>
+          </div>
+        </div>
+
         <a class="nav-link" href="cases.html">工程案例</a>
         <a class="nav-link" href="news.html">新闻中心</a>
-        <a class="nav-link" href="contact.html">联系我们</a>
+        <a class="nav-link active" href="contact.html">联系我们</a>
       </nav>
+
+      <button class="nav-toggle" data-nav-toggle aria-label="打开菜单">☰</button>
+    </div>
+
+    <!-- 移动端菜单 -->
+    <div class="mnav" data-mnav>
+      <a href="index.html" class="mnav-link active">首页</a>
+      <a href="about.html" class="mnav-link">关于我们</a>
+      <a href="products.html" class="mnav-link">产品中心</a>
+      <a href="cases.html" class="mnav-link">工程案例</a>
+      <a href="news.html" class="mnav-link">新闻中心</a>
+      <a href="contact.html" class="mnav-link">联系我们</a>
+      <div class="mnav-lang">
+        <a class="lang active" href="index.html">中文</a>
+        <span class="sep">|</span>
+        <a class="lang" href="en/index.html">EN</a>
+      </div>
     </div>
   </header>
 
-  <section class="section">
-    <div class="container" style="max-width:860px;">
-      <h1 class="h2">页面建设中</h1>
-      <p class="p">你点到的页面已创建占位，后续我们会把内容逐步完善（产品参数、案例、资质、联系方式等）。</p>
-      <div class="actions" style="margin-top:14px;">
-        <a class="btn primary" href="index.html">返回首页</a>
-        <a class="btn ghost" href="contact.html">联系我们</a>
+<!-- ===== Contact Content START ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div style="max-width: 980px; margin: 0 auto;">
+      <h1 class="h2" style="margin-bottom: 10px;">联系我们</h1>
+      <p class="p" style="margin-top: 0;">
+        欢迎咨询方案与报价。请尽量提供现场工况信息，我们将更快匹配合适的技术方案。
+      </p>
+    </div>
+
+    <div class="grid" style="margin-top: 18px;">
+      <!-- Contact info -->
+      <div class="card" style="padding: 18px;">
+        <h2 class="h3" style="margin-top: 0;">联系方式</h2>
+
+        <div class="p" style="margin: 10px 0;">
+          <strong>公司：</strong>河北中润轩机械设备有限公司<br/>
+          <span class="tiny" style="color: var(--muted);">Hebei Zhongrunxuan Machinery Equipment Co., Ltd.</span>
+        </div>
+
+        <div class="p" style="margin: 10px 0;">
+          <strong>电话：</strong>
+          <a href="tel:0317-4623118">0317-4623118</a>
+          <span class="tiny" style="color: var(--muted);">（工作日 8:00–18:00）</span>
+        </div>
+
+        <div class="p" style="margin: 10px 0;">
+          <strong>邮箱：</strong>
+          <a href="mailto:contact@zrxmachinery.com?subject=%E5%92%A8%E8%AF%A2%EF%BC%9A%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2...">
+            zrx8828@126.com
+          </a>
+        </div>
+
+        <div class="p" style="margin: 10px 0;">
+          <strong>地址：</strong>河北省沧州市献县106国道西、陈庄镇陈西村
+        </div>
+
+        <div class="actions" style="margin-top: 14px;">
+          <a class="btn primary" href="tel:0317-4623118">一键拨号</a>
+          <a class="btn ghost" href="mailto:zrx8828@126.com">发送邮件</a>
+        </div>
+
+        <div class="card" style="padding: 14px; background: var(--alt); margin-top: 14px;">
+          <div class="tiny" style="font-weight: 700;">建议您准备的信息</div>
+          <ul class="list" style="margin: 8px 0 0; padding-left: 18px;">
+            <li>行业与工段（如：烧结 / 高炉 / 连铸 / 热轧等）</li>
+            <li>处理对象（粉尘 / 烟气 / 废水 / 煤气）</li>
+            <li>处理量与关键参数（温度、含湿、浓度等）</li>
+            <li>现场空间与安装条件（新建/改造）</li>
+            <li>目标标准/验收要求</li>
+            <li>计划周期（设计/供货/投运时间）</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="card" style="padding: 18px;" id="form">
+        <h2 class="h3" style="margin-top: 0;">快速咨询表单</h2>
+        <p class="p" style="margin-top: 6px;">
+          先填基础信息即可，我们收到后会尽快联系您。
+        </p>
+
+        <!-- 先用纯前端表单；后续可接 Netlify Forms -->
+        <form action="#" method="post">
+          <div class="grid" style="gap: 12px;">
+            <div>
+              <label class="tiny" for="name">联系人</label>
+              <input id="name" name="name" type="text" placeholder="您的姓名" style="width:100%; padding:12px 12px; border-radius: 12px; border:1px solid var(--line);" />
+            </div>
+
+            <div>
+              <label class="tiny" for="phone">联系电话</label>
+              <input id="phone" name="phone" type="tel" placeholder="手机/座机" style="width:100%; padding:12px 12px; border-radius: 12px; border:1px solid var(--line);" />
+            </div>
+
+            <div>
+              <label class="tiny" for="email">邮箱</label>
+              <input id="email" name="email" type="email" placeholder="用于发送方案/报价" style="width:100%; padding:12px 12px; border-radius: 12px; border:1px solid var(--line);" />
+            </div>
+
+            <div>
+              <label class="tiny" for="industry">行业/工段</label>
+              <input id="industry" name="industry" type="text" placeholder="例如：钢铁-烧结 / 高炉 / 连铸" style="width:100%; padding:12px 12px; border-radius: 12px; border:1px solid var(--line);" />
+            </div>
+
+            <div>
+              <label class="tiny" for="type">处理对象</label>
+              <select id="type" name="type" style="width:100%; padding:12px 12px; border-radius: 12px; border:1px solid var(--line);">
+                <option value="">请选择</option>
+                <option value="dust">粉尘/除尘</option>
+                <option value="fluegas">烟气治理</option>
+                <option value="water">水处理/废水回用</option>
+                <option value="gas">煤气系统/回收利用</option>
+                <option value="other">其他</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="tiny" for="scale">处理量/规模</label>
+              <input id="scale" name="scale" type="text" placeholder="例如：xx m³/h / xx Nm³/h / xx t/h" style="width:100%; padding:12px 12px; border-radius: 12px; border:1px solid var(--line);" />
+            </div>
+
+            <div style="grid-column: 1 / -1;">
+              <label class="tiny" for="message">需求描述</label>
+              <textarea id="message" name="message" rows="6" placeholder="请描述现场工况、目标要求、是否改造等（越具体越好）"
+                style="width:100%; padding:12px 12px; border-radius: 12px; border:1px solid var(--line);"></textarea>
+            </div>
+
+            <div style="grid-column: 1 / -1;">
+              <button class="btn primary" type="submit">提交咨询（先占位）</button>
+              <div class="tiny" style="color: var(--muted); margin-top: 8px;">
+                提示：当前按钮为占位提交。后续我们可接入 Netlify Forms 或邮件转发，实现真正收集信息。
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-  </section>
+
+    <!-- Map placeholder -->
+    <div class="card" style="padding: 18px; margin-top: 18px;">
+      <h2 class="h3" style="margin-top: 0;">地图位置（可选）</h2>
+      <div class="img-placeholder" style="height: 320px; border-radius: 16px;"></div>
+      <p class="p" style="margin-bottom: 0;">
+        后续可嵌入高德/百度地图，或放置厂区定位截图。
+      </p>
+    </div>
+  </div>
+</section>
+<!-- ===== Contact Content END ===== -->
+
 
   <footer class="footer">
     <div class="container footer-bottom">

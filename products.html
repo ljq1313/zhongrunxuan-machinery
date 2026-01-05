@@ -10,9 +10,9 @@
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-left">
-        <span>服务热线：<a href="tel:4000000000">400-000-0000</a></span>
+        <span>服务热线：<a href="tel:0317-4623118">0317-4623118</a></span>
         <span class="sep">|</span>
-        <span>邮箱：<a href="mailto:contact@zrxmachinery.com">contact@zrxmachinery.com</a></span>
+        <span>邮箱：<a href="mailto:zrx8828@126.com">zrx8828@126.com</a></span>
       </div>
       <div class="topbar-right">
         <a class="lang active" href="index.html">中文</a>
@@ -22,36 +22,202 @@
     </div>
   </div>
 
+  <!-- 导航 -->
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <div class="brand-text">
-          <div class="brand-name">中润轩机械</div>
-          <div class="brand-sub">Hebei Zhongrunxuan Machinery Equipment Co., Ltd.</div>
-        </div>
-      </a>
-      <nav class="nav">
+  <img class="brand-logo" src="assets/img/logo.svg" alt="中润轩机械">
+  <div class="brand-text">
+    <div class="brand-name">中润轩机械</div>
+    <div class="brand-sub">Hebei Zhongrunxuan Machinery Equipment Co., Ltd.</div>
+  </div>
+</a>
+
+
+      <nav class="nav" aria-label="主导航">
         <a class="nav-link" href="index.html">首页</a>
-        <a class="nav-link" href="about.html">关于我们</a>
-        <a class="nav-link active" href="products.html">产品中心</a>
+        <div class="nav-dd" data-dd>
+          <a class="nav-link" href="about.html">关于我们</a>
+          <div class="dd-panel">
+            <a class="dd-item" href="about.html#intro">公司简介</a>
+            <a class="dd-item" href="about.html#capability">制造能力</a>
+            <a class="dd-item" href="about.html#honor">资质荣誉</a>
+            <a class="dd-item" href="about.html#culture">企业文化</a>
+          </div>
+        </div>
+
+        <div class="nav-dd" data-dd>
+          <a class="nav-link active" href="products.html">产品中心</a>
+          <div class="dd-panel dd-grid">
+            <a class="dd-item" href="products/water-treatment.html">水处理设备与系统</a>
+            <a class="dd-item" href="products/bag-filter.html">布袋除尘与烟气治理</a>
+            <a class="dd-item" href="products/blast-furnace-gas.html">高炉煤气净化系统</a>
+            <a class="dd-item" href="products/gas-flaring-recovery.html">煤气大放散回收系统</a>
+            <a class="dd-item" href="products/sintering-model.html">烧结系统工艺模型</a>
+            <a class="dd-item" href="products/complete-equipment.html">成套环保设备</a>
+            <a class="dd-item" href="products/custom-solution.html">非标定制解决方案</a>
+          </div>
+        </div>
+
         <a class="nav-link" href="cases.html">工程案例</a>
         <a class="nav-link" href="news.html">新闻中心</a>
         <a class="nav-link" href="contact.html">联系我们</a>
       </nav>
+
+      <button class="nav-toggle" data-nav-toggle aria-label="打开菜单">☰</button>
+    </div>
+
+    <!-- 移动端菜单 -->
+    <div class="mnav" data-mnav>
+      <a href="index.html" class="mnav-link active">首页</a>
+      <a href="about.html" class="mnav-link">关于我们</a>
+      <a href="products.html" class="mnav-link">产品中心</a>
+      <a href="cases.html" class="mnav-link">工程案例</a>
+      <a href="news.html" class="mnav-link">新闻中心</a>
+      <a href="contact.html" class="mnav-link">联系我们</a>
+      <div class="mnav-lang">
+        <a class="lang active" href="index.html">中文</a>
+        <span class="sep">|</span>
+        <a class="lang" href="en/index.html">EN</a>
+      </div>
     </div>
   </header>
 
-  <section class="section">
-    <div class="container" style="max-width:860px;">
-      <h1 class="h2">页面建设中</h1>
-      <p class="p">你点到的页面已创建占位，后续我们会把内容逐步完善（产品参数、案例、资质、联系方式等）。</p>
-      <div class="actions" style="margin-top:14px;">
-        <a class="btn primary" href="index.html">返回首页</a>
-        <a class="btn ghost" href="contact.html">联系我们</a>
+<!-- ===== Products Content START (replace your placeholder section with this) ===== -->
+<section class="section">
+  <div class="container">
+    <div style="max-width: 980px; margin: 0 auto;">
+      <h1 class="h2" style="margin-bottom: 10px;">产品中心</h1>
+      <p class="p" style="margin-top: 0;">
+        我们面向冶金及相关工业场景，提供工业环保与资源高效利用的系统解决方案。以下为主要产品与业务方向，点击可查看详情。
+      </p>
+    </div>
+
+    <div class="grid" style="margin-top: 18px;">
+      <!-- 1 Water treatment -->
+      <div class="card" style="padding: 18px;">
+        <h2 class="h3" style="margin-top: 0;">水处理系统</h2>
+        <p class="p">
+          面向循环水、工艺废水与回用水场景，提供从工艺方案到成套设备交付的整体解决方案，强调出水稳定与运维可控。
+        </p>
+        <div class="tiny" style="color: var(--muted);">
+          适用：循环水 / 废水处理 / 回用水 / 冶金水系统
+        </div>
+        <div class="actions" style="margin-top: 12px;">
+          <a class="btn primary" href="products/water-treatment.html">查看详情</a>
+        </div>
+      </div>
+
+      <!-- 2 Bag filter -->
+      <div class="card" style="padding: 18px;">
+        <h2 class="h3" style="margin-top: 0;">布袋除尘系统</h2>
+        <p class="p">
+          针对粉尘负荷波动与复杂工况，提供高效捕集与稳定压差控制的除尘系统，重视可靠性、易维护与长期运行表现。
+        </p>
+        <div class="tiny" style="color: var(--muted);">
+          适用：烧结 / 配料 / 输送转运 / 破碎筛分 / 料仓落料点
+        </div>
+        <div class="actions" style="margin-top: 12px;">
+          <a class="btn primary" href="products/bag-filter.html">查看详情</a>
+        </div>
+      </div>
+
+      <!-- 3 Blast furnace gas -->
+      <div class="card" style="padding: 18px;">
+        <h2 class="h3" style="margin-top: 0;">高炉煤气系统</h2>
+        <p class="p">
+          围绕煤气净化、输配与安全控制等环节，提供工程化系统集成，关注联锁保护、运行稳定与现场适配能力。
+        </p>
+        <div class="tiny" style="color: var(--muted);">
+          适用：冶金煤气净化 / 输配 / 利用与安全控制
+        </div>
+        <div class="actions" style="margin-top: 12px;">
+          <a class="btn primary" href="products/blast-furnace-gas.html">查看详情</a>
+        </div>
+      </div>
+
+      <!-- 4 Gas flaring recovery -->
+      <div class="card" style="padding: 18px;">
+        <h2 class="h3" style="margin-top: 0;">煤气大放散回收</h2>
+        <p class="p">
+          面向放散过程的回收利用与系统联动控制，降低无效排放与能耗损失，提升能源利用效率与运行安全性。
+        </p>
+        <div class="tiny" style="color: var(--muted);">
+          适用：放散回收 / 余压余能利用 / 系统联动控制
+        </div>
+        <div class="actions" style="margin-top: 12px;">
+          <a class="btn primary" href="products/gas-flaring-recovery.html">查看详情</a>
+        </div>
+      </div>
+
+      <!-- 5 Sintering module -->
+      <div class="card" style="padding: 18px;">
+        <h2 class="h3" style="margin-top: 0;">烧结系统相关模块</h2>
+        <p class="p">
+          结合烧结工况特点，提供治理与优化相关模块的工程化方案，注重工况适配、运行稳定与维护便利性。
+        </p>
+        <div class="tiny" style="color: var(--muted);">
+          适用：烧结配套工段 / 物料转运 / 料仓与落料点
+        </div>
+        <div class="actions" style="margin-top: 12px;">
+          <a class="btn primary" href="products/sintering-model.html">查看详情</a>
+        </div>
+      </div>
+
+      <!-- 6 Complete equipment -->
+      <div class="card" style="padding: 18px;">
+        <h2 class="h3" style="margin-top: 0;">成套设备与系统集成</h2>
+        <p class="p">
+          提供成套装备交付与系统集成服务，覆盖方案、制造、安装、调试与验收，确保交付节点可控与运行表现稳定。
+        </p>
+        <div class="tiny" style="color: var(--muted);">
+          适用：成套交付 / 系统集成 / 工程实施与验收
+        </div>
+        <div class="actions" style="margin-top: 12px;">
+          <a class="btn primary" href="products/complete-equipment.html">查看详情</a>
+        </div>
+      </div>
+
+      <!-- 7 Custom solution -->
+      <div class="card" style="padding: 18px;">
+        <h2 class="h3" style="margin-top: 0;">非标定制解决方案</h2>
+        <p class="p">
+          根据现场空间、介质特性与排放目标进行定制化设计与制造，强调可维护性、可靠性与长期综合成本可控。
+        </p>
+        <div class="tiny" style="color: var(--muted);">
+          适用：非标工况 / 改造项目 / 按需定制与优化
+        </div>
+        <div class="actions" style="margin-top: 12px;">
+          <a class="btn primary" href="products/custom-solution.html">查看详情</a>
+        </div>
+      </div>
+
+      <!-- 8 Placeholder -->
+      <div class="card" style="padding: 18px;">
+        <h2 class="h3" style="margin-top: 0;">更多方向（持续更新）</h2>
+        <p class="p">
+          我们将持续补充更多产品与解决方案细节，包括典型案例、交付范围与技术资料。若您有具体工况需求，欢迎直接联系我们。
+        </p>
+        <div class="actions" style="margin-top: 12px;">
+          <a class="btn ghost" href="contact.html">联系我们</a>
+        </div>
       </div>
     </div>
-  </section>
+
+    <div class="card" style="padding: 18px; margin-top: 18px;">
+      <h2 class="h3" style="margin-top: 0;">如何选择合适方案？</h2>
+      <p class="p">
+        为了更快匹配您的需求，建议准备以下信息：行业与工段、处理对象（粉尘/烟气/废水/煤气等）、处理量与关键参数、现场空间与安装条件、目标指标或标准、计划周期。
+      </p>
+      <div class="actions" style="margin-top: 12px;">
+        <a class="btn primary" href="contact.html">获取方案咨询</a>
+        <a class="btn ghost" href="cases.html">查看工程案例</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== Products Content END ===== -->
+
 
   <footer class="footer">
     <div class="container footer-bottom">
