@@ -3,11 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>中润轩机械 | 河北中润轩机械设备有限公司</title>
-  <meta name="description" content="河北中润轩机械设备有限公司（中润轩机械）专注工业环保设备与系统解决方案，涵盖水处理、布袋除尘、高炉煤气净化、煤气大放散回收、烧结系统模型等，提供设计、制造、安装与运维服务。" />
-  <meta name="keywords" content="河北中润轩机械设备有限公司,中润轩机械,水处理,布袋除尘,高炉煤气,煤气回收,大放散回收,烧结模型,环保设备,冶金环保" />
+  <title>水处理设备与系统 | 中润轩机械</title>
+  <meta name="description" content="中润轩机械水处理设备与系统：面向冶金浊环水/循环水、工业废水与回用水场景，提供方案设计、成套供货、安装调试与运维支持，强调出水稳定、占地集约与运维可控。" />
+  <meta name="keywords" content="水处理系统,循环水,浊环水,工业废水,回用水,中水回用,冶金水系统,中润轩机械" />
   <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
+
+  <!-- 本页补充样式：仅用于排版增强 -->
+  <style>
+    .cards-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card-pad{padding:18px}
+
+    .kpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}
+    .kpi .stat{
+      padding:16px;border:1px solid var(--line);border-radius:var(--radius);
+      background:#fff;box-shadow:0 10px 26px rgba(15,23,42,.04)
+    }
+    .kpi .stat-num{font-size:22px;font-weight:900;color:var(--brand)}
+    .kpi .stat-label{font-size:12px;color:#475569;margin-top:4px}
+
+    .steps{display:grid;gap:12px;margin-top:14px}
+    .step{
+      display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:start;
+      border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:14px
+    }
+    .step-num{
+      width:40px;height:40px;border-radius:999px;display:flex;align-items:center;justify-content:center;
+      font-weight:900;background:rgba(32,138,204,.12);color:var(--brand2);border:1px solid rgba(32,138,204,.18)
+    }
+
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+    .table{width:100%;border-collapse:collapse;min-width:820px}
+    .table th,.table td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;color:#0f172a}
+    .table th{background:#f8fafc;font-weight:900}
+
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .muted{color:var(--muted)}
+    @media (max-width: 980px){
+      .kpi{grid-template-columns:1fr}
+      .cards-2{grid-template-columns:1fr}
+      .h1{font-size:26px}
+    }
+  </style>
+<head>
+
 <body>
   <!-- 顶部条 -->
   <div class="topbar">
@@ -25,16 +63,16 @@
     </div>
   </div>
 
-  <!-- 导航 -->
+  <!-- 导航（对齐你现在的 products.html） -->
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="../index.html">
+      <a class="brand" href="index.html">
   <img class="brand-logo" src="../assets/img/logo.svg" alt="中润轩机械">
   <div class="brand-text">
     <div class="brand-name">中润轩机械</div>
+    <div class="brand-sub">Zhongrunxuan Machinery</div>
   </div>
 </a>
-
 
       <nav class="nav" aria-label="主导航">
         <a class="nav-link" href="../index.html">首页</a>
@@ -52,14 +90,15 @@
         <div class="nav-dd" data-dd>
           <a class="nav-link active" href="../products.html">产品中心</a>
           <div class="dd-panel dd-grid">
-            <a class="dd-item" href="../products/water-treatment.html">水处理设备与系统</a>
-            <a class="dd-item" href="../products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
-            <a class="dd-item" href="../products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
-            <a class="dd-item" href="../products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
-            <a class="dd-item" href="../products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
-            <a class="dd-item" href="../products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
-            <a class="dd-item" href="../products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
-            <a class="dd-item" href="../products/custom-solution.html">非标定制解决方案</a>
+            <a class="dd-item" href="./water-treatment.html">水处理设备与系统</a>
+            <a class="dd-item" href="./jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
+            <a class="dd-item" href="./gan_fa_chu_chen.html">高炉干法除尘系统</a>
+            <a class="dd-item" href="./cyclone-dust-collector.html">高效旋风除尘系统</a>
+            <a class="dd-item" href="./xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
+            <a class="dd-item" href="./ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+            <a class="dd-item" href="./huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+            <a class="dd-item" href="./wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+            <a class="dd-item" href="./custom-solution.html">非标定制解决方案</a>
           </div>
         </div>
 
@@ -71,11 +110,10 @@
       <button class="nav-toggle" data-nav-toggle aria-label="打开菜单">☰</button>
     </div>
 
-    <!-- 移动端菜单 -->
     <div class="mnav" data-mnav>
-      <a href="../index.html" class="mnav-link active">首页</a>
+      <a href="../index.html" class="mnav-link">首页</a>
       <a href="../about.html" class="mnav-link">关于我们</a>
-      <a href="../products.html" class="mnav-link">产品中心</a>
+      <a href="../products.html" class="mnav-link active">产品中心</a>
       <a href="../cases.html" class="mnav-link">工程案例</a>
       <a href="../news.html" class="mnav-link">新闻中心</a>
       <a href="../contact.html" class="mnav-link">联系我们</a>
@@ -87,101 +125,242 @@
     </div>
   </header>
 
-
-<!--主内容-->
-<main class="main">
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <h1 class="h2">水处理设备与系统</h1>
-        <p class="p">
-          面向冶金及相关工业循环水、浊环水与工艺废水场景，
-          提供以稳定运行、占地集约、运维可控为核心的水处理系统解决方案。
+  <main class="main">
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="../index.html">首页</a> / <a href="../products.html">产品中心</a> / 水处理设备与系统
+        </div>
+        <h1 class="hero-title">水处理设备与系统</h1>
+        <p class="hero-lead">
+          面向冶金浊环水/循环水、工业废水与回用水场景，提供 <b>方案设计 · 成套供货 · 安装调试 · 运维支持</b> 的一体化交付。
+          重点关注 <b>出水稳定、占地集约、运行可靠、运维可控</b>。
         </p>
       </div>
+    </section>
 
-      <div class="grid cards-3" style="margin-top:18px;">
-        <div class="card">
-          <div class="card-body">
-            <div class="tag">场景</div>
-            <div class="card-title">适用工况</div>
-            <ul class="list">
-              <li>炼钢 / 连铸 / 轧钢浊环水</li>
-              <li>工业循环水与工艺废水</li>
-              <li>高悬浮物、高含油水质</li>
-              <li>新建及改造升级项目</li>
-            </ul>
-          </div>
+    <!-- 核心指标（不写死参数，用“工程可交付语言”） -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">交付关注点</h2>
+          <p class="p">不堆概念，围绕“能稳定跑、好维护、好交付”。</p>
         </div>
 
-        <div class="card">
-          <div class="card-body">
-            <div class="tag">问题</div>
-            <div class="card-title">解决痛点</div>
-            <ul class="list">
-              <li>流程长、占地大</li>
-              <li>能耗高、运行成本高</li>
-              <li>水质波动、人工依赖强</li>
-              <li>系统分散、维护复杂</li>
-            </ul>
+        <div class="kpi">
+          <div class="stat">
+            <div class="stat-num">稳定</div>
+            <div class="stat-label">出水指标稳定、波动可控</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">集约</div>
+            <div class="stat-label">布置紧凑，占地与改造代价可控</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">可运维</div>
+            <div class="stat-label">药耗、电耗、污泥与检修周期可控</div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="card">
-          <div class="card-body">
-            <div class="tag">价值</div>
-            <div class="card-title">工程目标</div>
+    <!-- 应用场景 -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">应用场景</h2>
+          <p class="p">覆盖冶金及相关工业典型用水与排水系统。</p>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="card card-pad">
+            <h3 class="h3">循环水 / 浊环水系统</h3>
             <ul class="list">
-              <li>流程集约、结构紧凑</li>
-              <li>能耗可控、运行稳定</li>
-              <li>占地节省、易于改造</li>
-              <li>长期运行、维护友好</li>
+              <li>悬浮物控制与澄清回用</li>
+              <li>水质波动适配与旁滤保障</li>
+              <li>系统改造：占地/停产窗口约束下交付</li>
+            </ul>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">工业废水处理与回用</h3>
+            <ul class="list">
+              <li>预处理 + 深度处理 + 回用/达标排放</li>
+              <li>按现场水质与指标组合工艺段</li>
+              <li>污泥/浓盐水等副产物流向统筹</li>
             </ul>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="card" style="padding:18px; margin-top:18px;">
-        <h2 class="h3" style="margin-top:0;">核心技术与系统特点</h2>
-        <ul class="list">
-          <li><strong>高度集成化工艺</strong>：多处理单元系统集成，流程更短</li>
-          <li><strong>承压运行，一次提升</strong>：减少二次提升，降低能耗</li>
-          <li><strong>占地集约</strong>：显著节省土建面积，适配空间受限工况</li>
-          <li><strong>智能控制</strong>：自动调节运行参数，水质稳定</li>
-          <li><strong>运维友好</strong>：结构简化，维护工作量小</li>
-        </ul>
-      </div>
+    <!-- 总体方案（三板斧：调查→方案→交付） -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">总体实施路径</h2>
+          <p class="p">先把边界说清，再把系统做稳，最后把运维做轻。</p>
+        </div>
 
-      <div class="card" style="padding:18px; margin-top:14px;">
-        <h2 class="h3" style="margin-top:0;">典型技术指标（参考）</h2>
-        <ul class="list">
-          <li>进水 SS：≤ 500 mg/L</li>
-          <li>出水 SS：≤ 10–20 mg/L</li>
-          <li>含油量：≤ 3–5 mg/L</li>
-          <li>单台处理能力：约 200–300 m³/h</li>
-          <li>系统规模：可按项目定制</li>
-        </ul>
-      </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div>
+              <h3 class="h3">水质调查与边界确认</h3>
+              <p class="p">明确来水/峰谷、关键污染物、波动规律、场地与接口条件，给出可落地的处理边界与目标。</p>
+            </div>
+          </div>
 
-      <div class="card" style="padding:18px; margin-top:14px;">
-        <h2 class="h3" style="margin-top:0;">工程交付内容</h2>
-        <ul class="list">
-          <li>系统方案设计与参数核算</li>
-          <li>核心设备与成套系统制造</li>
-          <li>安装指导、调试与投运支持</li>
-          <li>运行优化与技术服务</li>
-        </ul>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div>
+              <h3 class="h3">工艺路线与设备选型</h3>
+              <p class="p">按“稳定达标 + 经济性 + 可维护性”平衡确定工艺段组合，并完成关键设备规格与冗余策略。</p>
+            </div>
+          </div>
 
-        <div class="actions" style="margin-top:14px;">
-          <a class="btn primary" href="../contact.html">获取方案与报价</a>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div>
+              <h3 class="h3">成套交付与联动调试</h3>
+              <p class="p">供货、安装指导、调试验收一体化推进，确保联动逻辑、报警保护与运行工况可控。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="../contact.html#form">获取方案咨询</a>
           <a class="btn outline" href="../cases.html">查看工程案例</a>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<!-- 页脚 -->
+    <!-- 系统模块（给客户看的“清单式”） -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">系统模块与常用单元</h2>
+          <p class="p">按工况组合，支持新建与改造。</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>模块</th>
+                <th>典型单元</th>
+                <th>解决的问题</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>预处理</td>
+                <td>格栅/调节池/混凝反应</td>
+                <td>削峰稳流、改善后端负荷</td>
+              </tr>
+              <tr>
+                <td>固液分离</td>
+                <td>沉淀/澄清/过滤/旁滤</td>
+                <td>降低悬浮物、保障回用稳定</td>
+              </tr>
+              <tr>
+                <td>深度处理</td>
+                <td>精滤/吸附/膜法（按需）</td>
+                <td>提升回用品质或达标能力</td>
+              </tr>
+              <tr>
+                <td>污泥处理</td>
+                <td>浓缩/脱水/外运处置</td>
+                <td>副产物闭环与成本可控</td>
+              </tr>
+              <tr>
+                <td>自动化与运维</td>
+                <td>在线监测/联锁/远程运维</td>
+                <td>减少人工、降低波动风险</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="p muted" style="margin-top:10px;">
+          注：具体工艺路线以实际水质与指标为准，可提供现场调研与方案对标。
+        </p>
+      </div>
+    </section>
+
+    <!-- 供货范围 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">供货范围与服务</h2>
+          <p class="p">把“交付边界”说清楚，客户更放心。</p>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="card card-pad">
+            <h3 class="h3">成套供货</h3>
+            <ul class="list">
+              <li>工艺包与施工配合资料（按项目阶段）</li>
+              <li>关键设备与成套模块（撬装/集约布置可选）</li>
+              <li>阀门、管路、仪表与控制柜（按需求配置）</li>
+            </ul>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">工程服务</h3>
+            <ul class="list">
+              <li>安装指导、联动调试、试运行与验收</li>
+              <li>运行培训与备品备件建议</li>
+              <li>运维支持：巡检/优化/改造升级</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="../contact.html#form">快速咨询</a>
+          <a class="btn" href="../products.html">返回产品中心</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 订货信息 -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">方案咨询需提供信息</h2>
+          <p class="p">你发这些信息过来，我就能快速把方案方向定住。</p>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="card card-pad">
+            <h3 class="h3">来水与指标</h3>
+            <ul class="list">
+              <li>水量：平均/峰值（m³/h 或 m³/d）</li>
+              <li>水质：SS、COD、含油、硬度/盐分等（有化验更好）</li>
+              <li>目标：回用水指标或排放标准</li>
+            </ul>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">现场条件</h3>
+            <ul class="list">
+              <li>场地占地、标高与接口（进出水/电气/排泥）</li>
+              <li>改造窗口：停产时间、切换方案要求</li>
+              <li>污泥/浓液去向：厂内条件与处置路径</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="../contact.html#form">提交参数获取报价</a>
+          <a class="btn ghost" href="mailto:zrx8828@126.com?subject=%E5%92%A8%E8%AF%A2%EF%BC%9A%E6%B0%B4%E5%A4%84%E7%90%86%E8%AE%BE%E5%A4%87%E4%B8%8E%E7%B3%BB%E7%BB%9F&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E6%B0%B4%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F%EF%BC%8C%E5%B7%A5%E5%86%B5%E5%A6%82%E4%B8%8B%EF%BC%9A%0A1%EF%BC%89%E6%B0%B4%E9%87%8F%EF%BC%9A%0A2%EF%BC%89%E6%B0%B4%E8%B4%A8%EF%BC%9A%0A3%EF%BC%89%E7%9B%AE%E6%A0%87%EF%BC%9A%0A4%EF%BC%89%E7%8E%B0%E5%9C%BA%E6%9D%A1%E4%BB%B6%EF%BC%9A">邮件咨询</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚（三列对齐你现在全站风格） -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-col">
@@ -191,20 +370,21 @@
       </div>
       <div class="footer-col">
         <div class="footer-title">产品中心</div>
-        <a class="footer-link" href="products/water-treatment.html">水处理设备与系统</a>
-        <a class="footer-link" href="products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
-        <a class="footer-link" href="products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
-        <a class="footer-link" href="products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
-        <a class="footer-link" href="products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
-        <a class="footer-link" href="products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
-        <a class="footer-link" href="products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+        <a class="footer-link" href="./water-treatment.html">水处理设备与系统</a>
+        <a class="footer-link" href="./jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
+        <a class="footer-link" href="./gan_fa_chu_chen.html">高炉干法除尘系统</a>
+        <a class="footer-link" href="./cyclone-dust-collector.html">高效旋风除尘系统</a>
+        <a class="footer-link" href="./xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
+        <a class="footer-link" href="./ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+        <a class="footer-link" href="./huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+        <a class="footer-link" href="./wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
       </div>
       <div class="footer-col">
         <div class="footer-title">联系</div>
         <div class="footer-text">电话：0317-4623118</div>
         <div class="footer-text">邮箱：zrx8828@126.com</div>
         <div class="footer-text">地址：河北省沧州市献县106国道西、陈庄镇陈西村</div>
-        <a class="footer-link" href="contact.html">联系我们</a>
+        <a class="footer-link" href="../contact.html">联系我们</a>
       </div>
     </div>
     <div class="container footer-bottom">

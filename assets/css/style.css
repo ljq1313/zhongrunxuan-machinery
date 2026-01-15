@@ -526,3 +526,317 @@ a{color:inherit;text-decoration:none}
 .btn.outline:hover{
   background: rgba(32,138,204,.08);
 }
+.btn.ghost{
+  opacity: 1 !important;
+  color: var(--brand2) !important;
+  background: #fff !important;
+  border: 1px solid rgba(32,138,204,.35) !important;
+}
+.btn.ghost:hover{
+  background: rgba(32,138,204,.10) !important;
+}
+.btn.disabled, .btn:disabled{
+  opacity: .45;              /* 只有真的禁用才灰 */
+  cursor: not-allowed;
+}
+
+  /* 产品中心页头（对齐产品详情页风格） */
+  .page-hero{
+    padding:56px 0 26px;
+    background:
+      radial-gradient(1200px 420px at 20% 15%, rgba(32,138,204,.24), transparent 55%),
+      linear-gradient(180deg,#0b1220 0%,#0f172a 70%,#0b1220 100%);
+    color:#f8fafc;
+  }
+  .breadcrumbs{font-size:12px;color:rgba(248,250,252,.75);margin-bottom:10px}
+  .breadcrumbs a{color:rgba(248,250,252,.92);text-decoration:underline;text-decoration-color:rgba(248,250,252,.25)}
+  .hero-title{font-size:34px;line-height:1.15;font-weight:900;margin:0 0 10px}
+  .hero-lead{color:rgba(248,250,252,.86);max-width:980px;margin:0}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .chip{
+    display:inline-flex;align-items:center;gap:6px;
+    padding:9px 12px;border-radius:999px;
+    border:1px solid rgba(148,163,184,.35);
+    background:rgba(255,255,255,.06);
+    color:rgba(248,250,252,.92);
+    font-size:13px;font-weight:700;
+  }
+  .chip.primary{
+    background:rgba(32,138,204,.18);
+    border-color:rgba(32,138,204,.40);
+    color:#dff6ff;
+  }
+
+  /* 产品中心分组标题 */
+  .group-title{margin:22px 0 10px;font-size:18px;font-weight:900;color:#0f172a}
+
+/* =========================================================
+   Consolidated styles (moved from per-page <style> blocks)
+   Goal: allow deleting inline <style> in all HTML pages.
+   ========================================================= */
+
+/* ----- Unified inner-page hero (About / Products / Cases / News) ----- */
+/* ===== 统一的深色 Hero（全站通用） ===== */
+.page-hero{
+  padding:56px 0 28px;
+  background:
+    radial-gradient(1100px 420px at 18% 18%, rgba(32,138,204,.22), transparent 55%),
+    linear-gradient(180deg,#0b1220 0%,#0f172a 70%,#0b1220 100%);
+  color:#f8fafc;
+}
+
+.page-hero .breadcrumbs{font-size:12px;color:rgba(248,250,252,.75);margin-bottom:10px}
+.page-hero .breadcrumbs a{color:rgba(248,250,252,.92);text-decoration:underline;text-decoration-color:rgba(248,250,252,.25)}
+.page-hero .hero-title{font-size:34px;line-height:1.15;font-weight:900;margin:0 0 10px}
+.page-hero .hero-lead{color:rgba(248,250,252,.86);max-width:980px;margin:0}
+
+/* Chips (filters) */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.chip{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:10px 14px;border-radius:999px;
+  border:1px solid rgba(148,163,184,.35);
+  background:rgba(255,255,255,.06);
+  color:rgba(248,250,252,.92);
+  font-size:13px;font-weight:800;
+  text-decoration:none;
+  transition:.15s ease;
+  cursor:pointer;
+}
+.chip:hover{background:rgba(255,255,255,.10)}
+.chip.primary{
+  background:rgba(32,138,204,.18);
+  border-color:rgba(32,138,204,.40);
+  color:#dff6ff;
+}
+
+/* ----- Product detail hero tags + lead ----- */
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.hero-tags .tag{
+  display:inline-flex;align-items:center;
+  padding:6px 10px;border-radius:999px;
+  border:1px solid rgba(148,163,184,.35);
+  background:rgba(255,255,255,.06);
+  color:rgba(248,250,252,.9);
+  font-size:12px;font-weight:800;
+}
+.lead{font-size:15px;line-height:1.9;color:rgba(248,250,252,.86);max-width:980px}
+.muted{color:#64748b}
+
+/* ----- KPI cards ----- */
+.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.stat{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:16px;
+  padding:14px 14px;
+  box-shadow:0 10px 26px rgba(2,6,23,.06);
+}
+.stat-num{font-size:18px;font-weight:900;color:#0f172a}
+.stat-label{margin-top:6px;color:#64748b;font-size:13px;font-weight:700}
+@media (max-width:980px){
+  .kpi{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .kpi{grid-template-columns:1fr}
+}
+
+/* ----- Two-column card grid used in product pages ----- */
+.cards-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+.card-pad{padding:16px}
+@media (max-width:980px){
+  .cards-2{grid-template-columns:1fr}
+}
+
+/* ----- Steps ----- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.step{
+  border:1px solid var(--line);
+  background:#fff;border-radius:16px;
+  padding:14px;
+}
+.step-num{
+  width:34px;height:34px;border-radius:10px;
+  display:inline-flex;align-items:center;justify-content:center;
+  background:rgba(32,138,204,.12);
+  border:1px solid rgba(32,138,204,.25);
+  font-weight:900;color:#0f172a;
+}
+.step h3{margin:10px 0 6px;font-size:16px;font-weight:900;color:#0f172a}
+.step p{margin:0;color:#475569}
+@media (max-width:980px){
+  .steps{grid-template-columns:1fr}
+}
+
+/* ----- Tables (spec / parameter) ----- */
+.table-wrap{
+  margin-top:14px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+}
+.table{width:100%;border-collapse:collapse;font-size:14px}
+.table th,.table td{padding:12px 14px;border-bottom:1px solid #e2e8f0;vertical-align:top}
+.table th{background:#f8fafc;font-weight:900;color:#0f172a;text-align:left}
+.table tr:last-child td{border-bottom:none}
+.simple-table{width:100%;border-collapse:collapse}
+.simple-table td{padding:10px 0;border-bottom:1px dashed #e2e8f0}
+.simple-table tr:last-child td{border-bottom:none}
+
+/* ----- Callout / points list ----- */
+.callout{
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  padding:16px;
+}
+.points{padding-left:18px;color:#334155}
+.points li{margin:6px 0}
+
+/* ----- CTA row ----- */
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+
+/* =========================================================
+   News list (news.html) cards
+   ========================================================= */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.news-card{
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 12px 28px rgba(2,6,23,.06);
+  display:flex;flex-direction:column;
+}
+.news-cover{aspect-ratio:16/9;background:#0f172a}
+.news-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.news-body{padding:14px 14px 16px}
+.news-title{margin:0 0 8px;font-size:16px;font-weight:900;color:#0f172a}
+.news-meta{display:flex;flex-wrap:wrap;gap:10px;color:#64748b;font-size:12px;font-weight:700}
+.news-desc{margin:10px 0 0;color:#475569}
+.news-actions{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+@media (max-width:980px){.news-grid{grid-template-columns:1fr}}
+
+/* =========================================================
+   News article (news-detail-*.html)
+   ========================================================= */
+.article-hero{
+  padding:56px 0 22px;
+  background:linear-gradient(180deg,#0b1220 0%,#0f172a 75%,#0b1220 100%);
+  color:#f8fafc;
+}
+.h1{font-size:30px;line-height:1.2;font-weight:900;margin:0 0 10px}
+.meta{display:flex;flex-wrap:wrap;gap:10px;color:rgba(248,250,252,.80);font-size:13px}
+.meta .tag{
+  background:rgba(32,138,204,.18);
+  border:1px solid rgba(32,138,204,.35);
+  color:#dff6ff;
+  border-radius:999px;
+  padding:4px 10px;
+}
+.article-cover{margin-top:16px;border-radius:18px;overflow:hidden;border:1px solid rgba(148,163,184,.25)}
+.article-cover img{width:100%;display:block}
+.article{padding:24px 0 42px}
+.article-section{margin-top:18px}
+.article-section h2{font-size:18px;margin:0 0 10px;font-weight:900;color:#0f172a}
+.article-section p{color:#334155}
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:18px}
+.pager a{
+  display:inline-flex;align-items:center;gap:8px;
+  color:#0f172a;text-decoration:none;
+  padding:10px 12px;border:1px solid var(--line);
+  border-radius:12px;background:#fff;
+}
+.pager a:hover{background:#f8fafc}
+@media (max-width:980px){.h1{font-size:26px}}
+
+/* =========================================================
+   Cases page (cases.html) simple list cards
+   ========================================================= */
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.case-card{
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 12px 28px rgba(2,6,23,.06);
+  display:flex;flex-direction:column;
+}
+.case-cover{aspect-ratio:16/9;background:#0f172a}
+.case-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.case-body{padding:14px 14px 16px}
+.case-title{margin:0 0 8px;font-size:16px;font-weight:900;color:#0f172a}
+.case-desc{margin:0;color:#475569}
+.case-meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:10px;color:#64748b;font-size:12px;font-weight:700}
+@media (max-width:980px){.case-grid{grid-template-columns:1fr}}
+
+/* =========================================================
+   Contact page (contact.html)
+   ========================================================= */
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:18px}
+.contact-card{
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+  padding:16px;
+  box-shadow:0 12px 28px rgba(2,6,23,.06);
+}
+.info-list{margin:0;padding:0;list-style:none}
+.info-list li{display:flex;gap:10px;margin:10px 0;color:#0f172a}
+.info-list .k{min-width:68px;color:#64748b;font-weight:800}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.form-grid .full{grid-column:1/-1}
+.input{
+  width:100%;
+  padding:12px 12px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  outline:none;
+  background:#fff;
+}
+.input:focus{border-color:rgba(32,138,204,.45);box-shadow:0 0 0 4px rgba(32,138,204,.12)}
+@media (max-width:980px){
+  .contact-grid{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
+}
+
+/* =========================================================
+   Honors page (honor.html) - gallery + filters
+   ========================================================= */
+.honor-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.honor-filters{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.honor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}
+.honor-item{
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  overflow:hidden;
+  box-shadow:0 10px 26px rgba(2,6,23,.06);
+}
+.honor-item img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}
+.honor-item .t{padding:10px 12px;font-weight:900;color:#0f172a}
+@media (max-width:980px){.honor-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.honor-grid{grid-template-columns:1fr}}
+
+/* =========================================================
+   Hub cards (products.html / about.html sections if used)
+   ========================================================= */
+.hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.hub-card{
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+  padding:16px;
+  box-shadow:0 12px 28px rgba(2,6,23,.06);
+}
+.hub-title{margin:0 0 6px;font-size:16px;font-weight:900;color:#0f172a}
+.hub-desc{margin:0;color:#475569}
+.hub-actions{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+.hub-tag{
+  display:inline-flex;align-items:center;
+  padding:6px 10px;border-radius:999px;
+  background:#f1f5f9;border:1px solid #e2e8f0;
+  color:#0f172a;font-size:12px;font-weight:800;
+}
+@media (max-width:980px){.hub-grid{grid-template-columns:1fr}}

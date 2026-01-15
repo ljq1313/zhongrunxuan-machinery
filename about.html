@@ -3,11 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>中润轩机械 | 河北中润轩机械设备有限公司</title>
-  <meta name="description" content="河北中润轩机械设备有限公司（中润轩机械）专注工业环保设备与系统解决方案，涵盖水处理、布袋除尘、高炉煤气净化、煤气大放散回收、烧结系统模型等，提供设计、制造、安装与运维服务。" />
-  <meta name="keywords" content="河北中润轩机械设备有限公司,中润轩机械,水处理,布袋除尘,高炉煤气,煤气回收,大放散回收,烧结模型,环保设备,冶金环保" />
+  <title>关于我们 | 中润轩机械</title>
+  <meta name="description" content="河北中润轩机械设备有限公司专注工业环保与资源高效利用，提供工程系统解决方案与一体化交付服务。了解公司简介、制造能力、资质荣誉与企业文化。" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    /* ===== Hero（对齐产品中心/产品详情页） ===== */
+    .page-hero{
+      padding:56px 0 28px;
+      background:
+        radial-gradient(1100px 420px at 18% 18%, rgba(32,138,204,.22), transparent 55%),
+        linear-gradient(180deg,#0b1220 0%,#0f172a 70%,#0b1220 100%);
+      color:#f8fafc;
+    }
+    .breadcrumbs{font-size:12px;color:rgba(248,250,252,.75);margin-bottom:10px}
+    .breadcrumbs a{color:rgba(248,250,252,.92);text-decoration:underline;text-decoration-color:rgba(248,250,252,.25)}
+    .hero-title{font-size:34px;line-height:1.15;font-weight:900;margin:0 0 10px}
+    .hero-lead{color:rgba(248,250,252,.86);max-width:980px;margin:0}
+
+    /* chips（只做入口视觉 & 可跳转） */
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .chip{
+      display:inline-flex;align-items:center;gap:6px;
+      padding:10px 14px;border-radius:999px;
+      border:1px solid rgba(148,163,184,.35);
+      background:rgba(255,255,255,.06);
+      color:rgba(248,250,252,.92);
+      font-size:13px;font-weight:800;
+      text-decoration:none;
+      transition:.15s ease;
+    }
+    .chip:hover{background:rgba(255,255,255,.10)}
+    .chip.primary{
+      background:rgba(32,138,204,.18);
+      border-color:rgba(32,138,204,.40);
+      color:#dff6ff;
+    }
+
+    /* ===== Hub cards（2×2 入口） ===== */
+    .hub-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+    }
+    .hub-card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:#fff;
+      padding:18px;
+      box-shadow:0 10px 26px rgba(15,23,42,.04);
+      display:flex;flex-direction:column;gap:10px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hub-card:before{
+      content:"";
+      position:absolute; inset:-80px -120px auto auto;
+      width:220px; height:220px;
+      background: radial-gradient(circle, rgba(32,138,204,.18), transparent 60%);
+      transform:rotate(12deg);
+      pointer-events:none;
+    }
+    .hub-tag{
+      display:inline-flex;align-items:center;
+      padding:4px 10px;border-radius:999px;
+      background:rgba(32,138,204,.10);
+      border:1px solid rgba(32,138,204,.18);
+      color:var(--brand2);
+      font-weight:900;
+      font-size:12px;
+      width:max-content;
+    }
+    .hub-title{margin:0;font-size:18px;font-weight:900;color:#0f172a}
+    .hub-desc{margin:0;color:#475569;font-size:13px;line-height:1.7}
+    .hub-list{margin:0;padding-left:18px;color:#475569;font-size:13px;line-height:1.7}
+    .hub-actions{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+
+    /* ===== 摘要区 ===== */
+    .about-title{font-size:18px;font-weight:900;margin:0 0 10px;color:#0f172a}
+    .kpi-row{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:12px;
+      margin-top:14px;
+    }
+    .kpi{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:14px;
+      background:var(--alt);
+    }
+    .kpi .kpi-h{font-weight:900;margin:0 0 6px;color:#0f172a}
+    .kpi .kpi-p{margin:0;color:#475569;font-size:13px;line-height:1.7}
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:12px;
+      margin-top:12px;
+    }
+    .step{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:14px;
+      background:#fff;
+    }
+    .step .n{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:26px;height:26px;border-radius:999px;
+      background:rgba(32,138,204,.12);
+      border:1px solid rgba(32,138,204,.18);
+      color:var(--brand2);
+      font-weight:900;
+      margin-bottom:8px;
+    }
+    .step .h{margin:0 0 6px;font-weight:900;color:#0f172a}
+    .step .p{margin:0;color:#475569;font-size:13px;line-height:1.7}
+
+    @media (max-width:980px){
+      .hub-grid{grid-template-columns:1fr}
+      .kpi-row{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr}
+      .hero-title{font-size:28px}
+    }
+
+    html{scroll-behavior:smooth;}
+  </style>
 </head>
+
 <body>
   <!-- 顶部条 -->
   <div class="topbar">
@@ -29,12 +152,12 @@
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-  <img class="brand-logo" src="assets/img/logo.svg" alt="中润轩机械">
-  <div class="brand-text">
-    <div class="brand-name">中润轩机械</div>
-  </div>
-</a>
-
+        <img class="brand-logo" src="assets/img/logo.svg" alt="中润轩机械">
+        <div class="brand-text">
+          <div class="brand-name">中润轩机械</div>
+          <div class="brand-sub">Zhongrunxuan Machinery</div>
+        </div>
+      </a>
 
       <nav class="nav" aria-label="主导航">
         <a class="nav-link" href="index.html">首页</a>
@@ -53,6 +176,7 @@
           <a class="nav-link" href="products.html">产品中心</a>
           <div class="dd-panel dd-grid">
             <a class="dd-item" href="products/water-treatment.html">水处理设备与系统</a>
+            <a class="dd-item" href="products/cyclone-dust-collector.html">高效旋风除尘系统</a>
             <a class="dd-item" href="products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
             <a class="dd-item" href="products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
             <a class="dd-item" href="products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
@@ -73,8 +197,8 @@
 
     <!-- 移动端菜单 -->
     <div class="mnav" data-mnav>
-      <a href="index.html" class="mnav-link active">首页</a>
-      <a href="about.html" class="mnav-link">关于我们</a>
+      <a href="index.html" class="mnav-link">首页</a>
+      <a href="about.html" class="mnav-link active">关于我们</a>
       <a href="products.html" class="mnav-link">产品中心</a>
       <a href="cases.html" class="mnav-link">工程案例</a>
       <a href="news.html" class="mnav-link">新闻中心</a>
@@ -87,148 +211,167 @@
     </div>
   </header>
 
- <!-- ===== About Content START (replace your placeholder section with this) ===== -->
-<section class="section">
-  <div class="container">
-    <div style="max-width: 980px; margin: 0 auto;">
-      <h1 class="h2" style="margin-bottom: 10px;">关于我们</h1>
-      <p class="p" style="margin-top: 0;">
-        河北中润轩机械设备有限公司专注于工业环保与资源高效利用的工程型业务，提供以工程落地为导向的系统解决方案。
-      </p>
-    </div>
-
-    <div class="grid" style="margin-top: 18px;">
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">公司简介</h2>
-        <p class="p">
-          <strong>河北中润轩机械设备有限公司</strong>是一家专注于工业环保与资源高效利用的工程型企业。公司围绕冶金及相关工业领域，
-          提供以工程落地为导向的系统解决方案，业务涵盖方案设计、设备制造、现场交付与运行支持等多个环节。
-        </p>
-        <p class="p">
-          我们坚持以实际工况为出发点，注重系统的稳定性、适配性与可维护性，致力于为客户提供长期可靠、运行可控的环保装备与工程服务。
-        </p>
+  <main class="main">
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs"><a href="index.html">首页</a> / 关于我们</div>
+        <h1 class="hero-title">关于我们</h1>
       </div>
+    </section>
 
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">我们的能力边界</h2>
-        <p class="p">
-          中润轩并非单一设备供应商，而是以<strong>工程系统能力</strong>为核心，参与项目从“方案形成”到“稳定运行”的全过程：
-        </p>
-        <ul class="list" style="margin: 0; padding-left: 18px;">
-          <li>工艺咨询与系统方案设计</li>
-          <li>成套装备与非标设备制造</li>
-          <li>现场安装指导与系统调试</li>
-          <li>运行维护支持与优化服务</li>
-        </ul>
-        <p class="p" style="margin-top: 12px;">
-          我们注重工程逻辑与交付结果，确保每一个项目不仅“建得成”，更“用得稳、用得久”。
-        </p>
-      </div>
+    <!-- Hub：四大入口 -->
+    <section class="section" id="hub">
+      <div class="container">
+        <div class="hub-grid">
 
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">技术与工程基础</h2>
-        <p class="p">
-          公司依托多年行业经验，在冶金环保与工业系统集成领域持续积累工程实践，具备完善的技术储备与实施能力。
-          通过持续优化系统结构与运行策略，我们在节能降耗、稳定运行与空间利用等方面形成了可复制的工程经验。
-        </p>
-        <p class="p">
-          在项目实施过程中，我们强调技术与现场条件的深度结合，避免“一套方案套所有现场”的模式，确保系统在实际运行中具备良好的适应性与可靠性。
-        </p>
-      </div>
+          <article class="hub-card">
+            <span class="hub-tag">公司简介</span>
+            <h2 class="hub-title">了解中润轩是谁、做什么、擅长什么</h2>
+            <p class="hub-desc">用更短时间建立对公司的整体认知：定位、服务范围、项目方法与合作方式。</p>
+            <ul class="hub-list">
+              <li>工程系统能力：方案—制造—交付—优化</li>
+              <li>面向冶金及相关工业场景</li>
+              <li>强调运行稳定与长期可维护</li>
+            </ul>
+            <div class="hub-actions">
+              <a class="btn primary" href="about/intro.html">查看公司简介</a>
+              <a class="btn outline" href="cases.html">看工程案例</a>
+            </div>
+          </article>
 
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">我们的理念</h2>
-        <ul class="list" style="margin: 0; padding-left: 18px;">
-          <li><strong>以工程为核心</strong>：不追求概念包装，关注系统长期运行表现</li>
-          <li><strong>以交付为目标</strong>：从设计到投运，强调节点把控与结果验证</li>
-          <li><strong>以合作为基础</strong>：重视与客户的长期合作关系，而非一次性交付</li>
-        </ul>
-        <p class="p" style="margin-top: 12px;">
-          我们相信，真正有价值的环保工程，来自对工况的尊重与对细节的长期打磨。
-        </p>
-      </div>
-    </div>
+          <article class="hub-card">
+            <span class="hub-tag">制造能力</span>
+            <h2 class="hub-title">制造与集成能力：把方案真正做成设备</h2>
+            <p class="hub-desc">从结构制造到系统集成，关注质量与交付可控，确保现场安装效率与投运稳定。</p>
+            <ul class="hub-list">
+              <li>成套供货：结构/管路/配套集成</li>
+              <li>质量控制：关键工序可追溯</li>
+              <li>现场友好：检修空间与施工窗口</li>
+            </ul>
+            <div class="hub-actions">
+              <a class="btn primary" href="about/capability.html">查看制造能力</a>
+              <a class="btn ghost" href="products.html">看产品中心</a>
+            </div>
+          </article>
 
-    <div class="card" style="padding: 18px; margin-top: 18px;">
-      <h2 class="h3" style="margin-top: 0;">面向未来</h2>
-      <p class="p">
-        中润轩将持续聚焦工业环保与资源利用领域，在不断变化的排放标准与生产需求下，探索更加稳定、高效、可持续的工程解决方案，为客户创造长期价值。
-      </p>
+          <article class="hub-card">
+            <span class="hub-tag">资质荣誉</span>
+            <h2 class="hub-title">体系与资质背书：更可信、更放心</h2>
+            <p class="hub-desc">展示公司资质、管理体系与荣誉证书，增强客户对交付与合规的信任。</p>
+            <ul class="hub-list">
+              <li>管理体系与认证资料汇总</li>
+              <li>项目交付能力的证明材料</li>
+              <li>持续改进与规范化管理</li>
+            </ul>
+            <div class="hub-actions">
+              <a class="btn primary" href="about/honor.html">查看资质荣誉</a>
+              <a class="btn outline" href="contact.html">获取资料</a>
+            </div>
+          </article>
 
-      <div class="grid" style="margin-top: 12px;">
-        <div class="card" style="padding: 14px; background: var(--alt);">
-          <div class="tiny" style="font-weight: 700;">工况导向</div>
-          <div class="p" style="margin: 6px 0 0;">以现场条件为核心，方案更适配，运行更稳定。</div>
-        </div>
-        <div class="card" style="padding: 14px; background: var(--alt);">
-          <div class="tiny" style="font-weight: 700;">交付可控</div>
-          <div class="p" style="margin: 6px 0 0;">关键节点把控与质量追溯，确保验收与运行表现。</div>
-        </div>
-        <div class="card" style="padding: 14px; background: var(--alt);">
-          <div class="tiny" style="font-weight: 700;">长期服务</div>
-          <div class="p" style="margin: 6px 0 0;">运维支持与持续优化，帮助客户获得长期价值。</div>
+          <article class="hub-card">
+            <span class="hub-tag">企业文化</span>
+            <h2 class="hub-title">做事方式：标准、严谨、长期主义</h2>
+            <p class="hub-desc">我们如何理解工程、如何对待现场、如何和客户长期合作——都在这里。</p>
+            <ul class="hub-list">
+              <li>以工程落地为导向</li>
+              <li>以交付闭环为标准</li>
+              <li>以长期运行价值为目标</li>
+            </ul>
+            <div class="hub-actions">
+              <a class="btn primary" href="about/culture.html">查看企业文化</a>
+              <a class="btn ghost" href="tel:0317-4623118">直接沟通</a>
+            </div>
+          </article>
+
         </div>
       </div>
+    </section>
 
-      <div class="actions" style="margin-top: 14px;">
-        <a class="btn primary" href="contact.html">联系我们</a>
-        <a class="btn ghost" href="products.html">查看产品中心</a>
+    <!-- 摘要：公司定位 -->
+    <section class="section" id="position">
+      <div class="container">
+        <div class="card" style="padding:18px;">
+          <h2 class="about-title">公司定位摘要</h2>
+          <p class="p" style="margin-top:0;">
+            中润轩不是单一设备供应商，而是以<strong>工程系统能力</strong>为核心的工程型企业：
+            从工况调研、方案形成，到成套制造、现场交付与投运优化，强调“交付可控、运行稳定、长期可维护”。
+          </p>
+
+          <div class="kpi-row">
+            <div class="kpi">
+              <div class="kpi-h">工况导向</div>
+              <p class="kpi-p">方案贴合现场空间、工艺节拍与运行边界，避免“一套方案套所有现场”。</p>
+            </div>
+            <div class="kpi">
+              <div class="kpi-h">交付闭环</div>
+              <p class="kpi-p">关键节点可追溯，确保验收与运行表现一致，减少投运后的反复调整。</p>
+            </div>
+            <div class="kpi">
+              <div class="kpi-h">长期价值</div>
+              <p class="kpi-p">运维支持与持续优化，帮助客户长期稳定达标、降低运行成本。</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Images placeholder (you can replace later) -->
-    <div class="grid" style="margin-top: 18px;">
-      <div class="card" style="padding: 18px;">
-        <h3 class="h3" style="margin-top: 0;">厂房与设备</h3>
-         <img 
-          src="assets/img/factory_1.png" 
-          alt="厂房与设备"
-          style="
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 16px;
-          "
-         />
-  <p class="p" style="margin-bottom: 0;">
-  </p>
-</div>
+    <!-- 交付能力 -->
+    <section class="section" id="delivery">
+      <div class="container">
+        <div class="card" style="padding:18px;">
+          <h2 class="about-title">交付能力（全周期服务）</h2>
+          <p class="p" style="margin-top:0;">
+            围绕项目全周期，我们提供可落地的工程服务组合：从方案到投运，强调进度、质量与运行表现的统一。
+          </p>
 
-      <div class="card" style="padding: 18px;">
-        <h3 class="h3" style="margin-top: 0;">项目现场</h3>
-        <img 
-          src="assets/img/project_1.jpg" 
-          alt="项目现场"
-          style="
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 16px;
-          "
-         />
-         <p class="p" style="margin-bottom: 0;"></p>
+          <div class="steps">
+            <div class="step">
+              <div class="n">1</div>
+              <div class="h">方案设计</div>
+              <p class="p">工况调研、边界梳理、方案比选与可行性评估。</p>
+            </div>
+            <div class="step">
+              <div class="n">2</div>
+              <div class="h">成套制造</div>
+              <p class="p">结构/管路/配套集成，关键工序质量控制与可追溯。</p>
+            </div>
+            <div class="step">
+              <div class="n">3</div>
+              <div class="h">现场交付</div>
+              <p class="p">安装指导、系统联动调试、参数整定与验收支持。</p>
+            </div>
+            <div class="step">
+              <div class="n">4</div>
+              <div class="h">运行支持</div>
+              <p class="p">投运稳定性提升、运维培训与持续优化服务。</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card" style="padding: 18px;">
-        <h3 class="h3" style="margin-top: 0;">资质与能力</h3>
-        <img 
-          src="assets/img/qualification/huan_jing_guan_li.jpg" 
-          alt="资质与能力"
-          style="
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 16px;
-          "
-         />
-        <p class="p" style="margin-bottom: 0;"></p>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="cta">
+      <div class="container">
+        <div class="card" style="padding:18px;">
+          <h2 class="about-title">需要我们配合做方案？</h2>
+          <p class="p" style="margin-top:0;">
+            建议准备：工段/工况描述、处理对象与波动范围、处理量与关键参数、接口与空间条件、目标指标与计划周期。
+            我们将给出方案建议与落地实施路径。
+          </p>
+          <div class="actions" style="margin-top:14px;">
+            <a class="btn primary" href="contact.html#form">联系我们</a>
+            <a class="btn outline" href="products.html">查看产品中心</a>
+            <a class="btn ghost" href="cases.html">查看工程案例</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- ===== About Content END ===== -->
+    </section>
+  </main>
 
-
-<!-- 页脚 -->
+  <!-- 页脚（对齐你全站，包含旋风&非标） -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-col">
@@ -236,16 +379,20 @@
         <div class="footer-sub">河北中润轩机械设备有限公司</div>
         <div class="footer-sub">Hebei Zhongrunxuan Machinery Equipment Co., Ltd.</div>
       </div>
+
       <div class="footer-col">
         <div class="footer-title">产品中心</div>
         <a class="footer-link" href="products/water-treatment.html">水处理设备与系统</a>
+        <a class="footer-link" href="products/cyclone-dust-collector.html">高效旋风除尘系统</a>
         <a class="footer-link" href="products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
         <a class="footer-link" href="products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
         <a class="footer-link" href="products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
         <a class="footer-link" href="products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
         <a class="footer-link" href="products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
         <a class="footer-link" href="products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+        <a class="footer-link" href="products/custom-solution.html">非标定制解决方案</a>
       </div>
+
       <div class="footer-col">
         <div class="footer-title">联系</div>
         <div class="footer-text">电话：0317-4623118</div>
@@ -254,6 +401,7 @@
         <a class="footer-link" href="contact.html">联系我们</a>
       </div>
     </div>
+
     <div class="container footer-bottom">
       <div>© <span id="y"></span> 河北中润轩机械设备有限公司 · 保留所有权利</div>
       <div>备案号：冀ICP备XXXXXXX号（示例）</div>

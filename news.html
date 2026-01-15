@@ -3,10 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>页面建设中 | 中润轩机械</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>新闻中心 | 中润轩机械</title>
+  <meta name="description" content="中润轩机械新闻中心：项目进度、工程记录、公司动态与技术分享。" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <style>
+    .lead{color:rgba(248,250,252,.86);max-width:980px}
+
+    .filters{
+      display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+      margin-top:14px;
+    }
+    .chip{
+      display:inline-flex;align-items:center;gap:6px;
+      padding:8px 12px;border-radius:999px;
+      border:1px solid rgba(148,163,184,.35);
+      background:rgba(255,255,255,.06);
+      color:rgba(248,250,252,.92);
+      font-size:13px;cursor:pointer;
+      user-select:none;
+      transition:.15s ease;
+    }
+    .chip:hover{background:rgba(255,255,255,.10)}
+    .chip.active{
+      background:rgba(32,138,204,.18);
+      border-color:rgba(32,138,204,.40);
+      color:#dff6ff;
+    }
+
+    .news-wrap{padding:34px 0}
+    .news-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .news-card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      overflow:hidden;
+      background:#fff;
+      box-shadow:0 10px 26px rgba(15,23,42,.04);
+      display:flex;flex-direction:column;
+      min-height:100%;
+    }
+    .news-cover{display:block;position:relative;aspect-ratio:16/9;background:#0b1220}
+    .news-cover img{width:100%;height:100%;object-fit:cover;display:block}
+    .news-body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+    .news-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:#64748b;font-size:12px}
+    .news-meta .tag{
+      display:inline-flex;align-items:center;
+      padding:4px 10px;border-radius:999px;
+      background:rgba(32,138,204,.10);
+      border:1px solid rgba(32,138,204,.18);
+      color:var(--brand2);
+      font-weight:700;
+    }
+    .news-meta .dot{opacity:.7}
+    .news-title{margin:0;font-size:16px;line-height:1.35}
+    .news-title a{color:#0f172a;text-decoration:none}
+    .news-title a:hover{color:var(--brand2)}
+    .news-excerpt{margin:0;color:#475569;font-size:13px;line-height:1.6}
+    .news-actions{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+
+    .empty{
+      border:1px dashed rgba(148,163,184,.6);
+      border-radius:var(--radius);
+      background:#fff;
+      padding:16px;
+      color:#475569;
+    }
+
+    @media (max-width:1020px){
+      .news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media (max-width:640px){
+      .h1{font-size:26px}
+      .news-grid{grid-template-columns:1fr}
+    }
+  </style>
 </head>
+
 <body>
+  <!-- 顶部条 -->
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-left">
@@ -15,9 +93,9 @@
         <span>邮箱：<a href="mailto:zrx8828@126.com">zrx8828@126.com</a></span>
       </div>
       <div class="topbar-right">
-        <a class="lang active" href="index.html">中文</a>
+        <a class="lang active" href="./index.html">中文</a>
         <span class="sep">|</span>
-        <a class="lang" href="en/index.html">EN</a>
+        <a class="lang" href="./en/index.html">EN</a>
       </div>
     </div>
   </div>
@@ -29,19 +107,20 @@
   <img class="brand-logo" src="assets/img/logo.svg" alt="中润轩机械">
   <div class="brand-text">
     <div class="brand-name">中润轩机械</div>
+    <div class="brand-sub">Zhongrunxuan Machinery</div>
   </div>
 </a>
 
-
       <nav class="nav" aria-label="主导航">
         <a class="nav-link" href="index.html">首页</a>
+
         <div class="nav-dd" data-dd>
           <a class="nav-link" href="about.html">关于我们</a>
           <div class="dd-panel">
-            <a class="dd-item" href="about.html#intro">公司简介</a>
-            <a class="dd-item" href="about.html#capability">制造能力</a>
-            <a class="dd-item" href="about.html#honor">资质荣誉</a>
-            <a class="dd-item" href="about.html#culture">企业文化</a>
+            <a class="dd-item" href="about/intro.html">公司简介</a>
+            <a class="dd-item" href="about/capability.html">制造能力</a>
+            <a class="dd-item" href="about/honor.html">资质荣誉</a>
+            <a class="dd-item" href="about/culture.html">企业文化</a>
           </div>
         </div>
 
@@ -49,11 +128,13 @@
           <a class="nav-link" href="products.html">产品中心</a>
           <div class="dd-panel dd-grid">
             <a class="dd-item" href="products/water-treatment.html">水处理设备与系统</a>
-            <a class="dd-item" href="products/bag-filter.html">布袋除尘与烟气治理</a>
-            <a class="dd-item" href="products/blast-furnace-gas.html">高炉煤气净化系统</a>
-            <a class="dd-item" href="products/gas-flaring-recovery.html">煤气大放散回收系统</a>
-            <a class="dd-item" href="products/sintering-model.html">烧结系统工艺模型</a>
-            <a class="dd-item" href="products/complete-equipment.html">成套环保设备</a>
+            <a class="dd-item" href="products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
+            <a class="dd-item" href="products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
+            <a class="dd-item" href="products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
+            <a class="dd-item" href="products/cyclone-dust-collector.html">高效旋风除尘系统</a>
+            <a class="dd-item" href="products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+            <a class="dd-item" href="products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+            <a class="dd-item" href="products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
             <a class="dd-item" href="products/custom-solution.html">非标定制解决方案</a>
           </div>
         </div>
@@ -68,11 +149,11 @@
 
     <!-- 移动端菜单 -->
     <div class="mnav" data-mnav>
-      <a href="index.html" class="mnav-link active">首页</a>
+      <a href="index.html" class="mnav-link">首页</a>
       <a href="about.html" class="mnav-link">关于我们</a>
       <a href="products.html" class="mnav-link">产品中心</a>
       <a href="cases.html" class="mnav-link">工程案例</a>
-      <a href="news.html" class="mnav-link">新闻中心</a>
+      <a href="news.html" class="mnav-link active">新闻中心</a>
       <a href="contact.html" class="mnav-link">联系我们</a>
       <div class="mnav-lang">
         <a class="lang active" href="index.html">中文</a>
@@ -82,17 +163,84 @@
     </div>
   </header>
 
-
-  <section class="section">
-    <div class="container" style="max-width:860px;">
-      <h1 class="h2">页面建设中</h1>
-      <p class="p">你点到的页面已创建占位，后续我们会把内容逐步完善（产品参数、案例、资质、联系方式等）。</p>
-      <div class="actions" style="margin-top:14px;">
-        <a class="btn primary" href="index.html">返回首页</a>
-        <a class="btn ghost" href="contact.html">联系我们</a>
+  <main class="main">
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs"><a href="./index.html">首页</a> / 新闻中心</div>
+        <h1 class="hero-title">新闻中心</h1>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- News List -->
+    <section class="news-wrap">
+      <div class="container">
+        <div class="news-grid">
+
+          <!-- 达钢 -->
+          <article class="news-card">
+            <a class="news-cover" href="./news-detail-dagang.html" aria-label="工程记录｜达钢1号高炉布袋除尘施工进展">
+              <img src="./assets/img/news/dagang.jpg" alt="达钢1号高炉布袋除尘施工现场" loading="lazy">
+            </a>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="tag">工程记录</span>
+                <span class="dot">·</span>
+                <time datetime="2024-11-25">2024-11-25</time>
+                <span class="dot">·</span>
+                <span>达州市达川区</span>
+              </div>
+              <h3 class="news-title">
+                <a href="./news-detail-dagang.html">工程记录｜达钢1号高炉布袋除尘施工进展</a>
+              </h3>
+              <p class="news-excerpt">
+                项目地点：达州市达川区·方大达钢（西门）。围绕布袋除尘系统结构安装、平台与现场组织管理推进节点落地。
+              </p>
+              <div class="news-actions">
+                <a class="btn outline" href="news/news-detail-dagang.html">查看详情</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 北港 -->
+          <article class="news-card">
+            <a class="news-cover" href="news/news-detail-beigang.html" aria-label="北港渣处理除尘项目｜施工进度更新">
+              <img src="./assets/img/news/beigang.jpg" alt="北港渣处理除尘项目施工现场" loading="lazy">
+            </a>
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="tag">项目进度</span>
+                <span class="dot">·</span>
+                <time datetime="2025-11-10">2025-11-10</time>
+                <span class="dot">·</span>
+                <span>北海市铁山港区</span>
+              </div>
+              <h3 class="news-title">
+                <a href="./news-detail-beigang.html">北港渣处理除尘项目｜施工进度更新</a>
+              </h3>
+              <p class="news-excerpt">
+                项目地点：北海市铁山港区·广西北港新材料有限公司。围绕渣处理产线扬尘治理，施工现场按计划推进主体结构安装。
+              </p>
+              <div class="news-actions">
+                <a class="btn outline" href="news/news-detail-beigang.html">查看详情</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 预留位：你后续继续加新闻 -->
+          <!--
+          <div class="empty">
+            <div style="font-weight:900;margin-bottom:6px;color:#0f172a;">后续新闻怎么加？</div>
+            <div style="font-size:13px;line-height:1.7;">
+              你每次给我：<b>照片 + 项目名（可选）</b>，我会按同样格式生成一条新闻（列表卡片 + 详情页）。
+              也可以把“公司动态/展会参展/发货交付/技术获奖”等做成栏目化内容。
+            </div>
+          </div>
+--> 
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- 页脚 -->
   <footer class="footer">
@@ -105,9 +253,13 @@
       <div class="footer-col">
         <div class="footer-title">产品中心</div>
         <a class="footer-link" href="products/water-treatment.html">水处理设备与系统</a>
-        <a class="footer-link" href="products/bag-filter.html">布袋除尘与烟气治理</a>
-        <a class="footer-link" href="products/blast-furnace-gas.html">高炉煤气净化系统</a>
-        <a class="footer-link" href="products/gas-flaring-recovery.html">煤气大放散回收系统</a>
+        <a class="footer-link" href="products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
+        <a class="footer-link" href="products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
+        <a class="footer-link" href="products/cyclone-dust-collector.html">高效旋风除尘系统</a>
+        <a class="footer-link" href="products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
+        <a class="footer-link" href="products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+        <a class="footer-link" href="products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+        <a class="footer-link" href="products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
       </div>
       <div class="footer-col">
         <div class="footer-title">联系</div>

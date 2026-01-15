@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>高效旋风除尘系统 | 中润轩机械</title>
+  <meta name="description" content="高效旋风除尘系统：面向高炉煤气系统前端减负与抗锌板结，通过旋风除尘+流速提升+管道保温，降低干法布袋负荷，提升系统长期稳定性。" />
+  <meta name="keywords" content="高效旋风除尘,旋风除尘器,高炉煤气,抗锌板结,干法除尘减负,煤气系统,中润轩机械" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <!-- 本页补充：仅做排版增强，不影响全站 -->
+  <style>
+    .lead{color:rgba(248,250,252,.86);max-width:920px}
+    .cards-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card-pad{padding:18px}
+    .note{margin-top:10px}
+
+    .kpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}
+    .kpi .stat{
+      padding:16px;border:1px solid var(--line);border-radius:var(--radius);
+      background:#fff;box-shadow:0 10px 26px rgba(15,23,42,.04)
+    }
+    .kpi .stat-num{font-size:22px;font-weight:900;color:var(--brand)}
+    .kpi .stat-label{font-size:12px;color:#475569;margin-top:4px}
+
+    .steps{display:grid;gap:12px;margin-top:14px}
+    .step{
+      display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:start;
+      border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:14px
+    }
+    .step-num{
+      width:40px;height:40px;border-radius:999px;display:flex;align-items:center;justify-content:center;
+      font-weight:900;background:rgba(32,138,204,.12);color:var(--brand2);border:1px solid rgba(32,138,204,.18)
+    }
+
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+    .table{width:100%;border-collapse:collapse;min-width:760px}
+    .table th,.table td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;color:#0f172a}
+    .table th{background:#f8fafc;font-weight:900}
+    .muted{color:var(--muted)}
+
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+
+    @media (max-width: 980px){
+      .kpi{grid-template-columns:1fr}
+      .cards-2{grid-template-columns:1fr}
+      .h1{font-size:26px}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 顶部条（与主页面一致） -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span>服务热线：<a href="tel:0317-4623118">0317-4623118</a></span>
+        <span class="sep">|</span>
+        <span>邮箱：<a href="mailto:zrx8828@126.com">zrx8828@126.com</a></span>
+      </div>
+      <div class="topbar-right">
+        <a class="lang active" href="../index.html">中文</a>
+        <span class="sep">|</span>
+        <a class="lang" href="../en/index.html">EN</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 导航（对齐主页面：品牌只显示中文名） -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+  <img class="brand-logo" src="../assets/img/logo.svg" alt="中润轩机械">
+  <div class="brand-text">
+    <div class="brand-name">中润轩机械</div>
+    <div class="brand-sub">Zhongrunxuan Machinery</div>
+  </div>
+</a>
+
+      <nav class="nav" aria-label="主导航">
+        <a class="nav-link" href="../index.html">首页</a>
+
+        <div class="nav-dd" data-dd>
+          <a class="nav-link" href="../about.html">关于我们</a>
+          <div class="dd-panel">
+            <a class="dd-item" href="../about/intro.html">公司简介</a>
+            <a class="dd-item" href="../about/capability.html">制造能力</a>
+            <a class="dd-item" href="../about/honor.html">资质荣誉</a>
+            <a class="dd-item" href="../about/culture.html">企业文化</a>
+          </div>
+        </div>
+
+        <div class="nav-dd" data-dd>
+          <a class="nav-link active" href="../products.html">产品中心</a>
+          <div class="dd-panel dd-grid">
+            <!-- ✅ 对齐主页面的产品列表（并新增本页入口） -->
+            <a class="dd-item" href="./water-treatment.html">水处理设备与系统</a>
+            <a class="dd-item" href="./jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
+            <a class="dd-item" href="./gan_fa_chu_chen.html">高炉干法除尘系统</a>
+
+            <a class="dd-item" href="./cyclone-dust-collector.html">高效旋风除尘系统</a>
+
+            <a class="dd-item" href="./xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
+            <a class="dd-item" href="./ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+            <a class="dd-item" href="./huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+            <a class="dd-item" href="./wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+            <a class="dd-item" href="./custom-solution.html">非标定制解决方案</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="../cases.html">工程案例</a>
+        <a class="nav-link" href="../news.html">新闻中心</a>
+        <a class="nav-link" href="../contact.html">联系我们</a>
+      </nav>
+
+      <button class="nav-toggle" data-nav-toggle aria-label="打开菜单">☰</button>
+    </div>
+
+    <!-- 移动端菜单（保持与全站一致） -->
+    <div class="mnav" data-mnav>
+      <a href="../index.html" class="mnav-link">首页</a>
+      <a href="../about.html" class="mnav-link">关于我们</a>
+      <a href="../products.html" class="mnav-link active">产品中心</a>
+      <a href="../cases.html" class="mnav-link">工程案例</a>
+      <a href="../news.html" class="mnav-link">新闻中心</a>
+      <a href="../contact.html" class="mnav-link">联系我们</a>
+      <div class="mnav-lang">
+        <a class="lang active" href="../index.html">中文</a>
+        <span class="sep">|</span>
+        <a class="lang" href="../en/index.html">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="../index.html">首页</a> / <a href="../products.html">产品中心</a> / 高效旋风除尘系统
+        </div>
+        <h1 class="hero-title">高效旋风除尘系统</h1>
+        <p class="hero-lead">
+          面向高炉煤气系统“前端减负与抗锌板结”场景，通过 <b>旋风除尘 + 流速提升 + 管道保温</b> 的工程化组合方案，
+          减少含锌灰富集与沉积，降低干法布袋负荷，提升系统长期稳定运行能力。
+        </p>
+      </div>
+    </section>
+
+    <!-- 核心指标 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">核心价值与指标</h2>
+          <p class="p">以系统为对象，不止“多加一个设备”，而是为煤气系统稳定性与可维护性服务。</p>
+        </div>
+
+        <div class="kpi">
+          <div class="stat">
+            <div class="stat-num">80–85%</div>
+            <div class="stat-label">旋风段典型总除尘效率（工程实践）</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">20–30 μm</div>
+            <div class="stat-label">旋风段更有效的捕集粒径区间</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">≥10 m/s</div>
+            <div class="stat-label">建议煤气支管安全输送流速下限</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 痛点 -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">典型痛点：锌灰沉积 → 板结</h2>
+          <p class="p">常见发生在煤气总管/支管、弯头、变径、阀门等位置，造成压降升高、检修频繁与运行风险。</p>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="card card-pad">
+            <h3 class="h3">为什么会沉积？（低流速 & 方向变化）</h3>
+            <ul class="list">
+              <li><b>重力沉降</b>：流速不足时，较粗颗粒优先沉降到管底。</li>
+              <li><b>惯性沉积</b>：弯头/变径等处颗粒脱离流线撞壁附着。</li>
+              <li><b>沉积层压实</b>：沉积加厚后压实成“灰层”，有效截面变小。</li>
+            </ul>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">为什么会板结？（吸潮/低熔点共晶/温降）</h3>
+            <ul class="list">
+              <li>含锌灰中易存在 Zn、Pb 及碱金属化合物，具有吸湿与粘结风险。</li>
+              <li>温度波动与结露会加速“灰层”从松散堆积走向硬化板结。</li>
+              <li>低熔点共晶物在较低温度区间更易凝结附着，形成顽固沉积。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 总体方案 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">总体方案：三板斧组合治理</h2>
+          <p class="p">目标：减少锌灰富集、减缓沉积、避免结露与低温凝结。</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h3 class="h3">增加旋风除尘器：前端减负，减少锌灰富集</h3>
+              <p class="p">
+                在重力除尘与干法布袋之间增加高效旋风段，提前脱除更易沉积的颗粒，显著降低后端干法除尘负荷与含锌灰富集风险。
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h3 class="h3">减少干法箱体投入：提高煤气支管流速（建议 ≥10 m/s）</h3>
+              <p class="p">
+                通过系统侧调整，使关键部位流速提升到更有利于“可靠输送”的区间，利用湍流与剪切力降低沉积概率，并有助于对已沉积粉尘的再悬浮输送。
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h3 class="h3">管道增加保温：控制温度 ≥150℃，避免结露与凝结附着</h3>
+              <p class="p">
+                通过保温减少温降，进一步降低含锌灰在低温区间凝结附着的条件，在“灰量减少 + 流速提高”的前提下，强化长期稳定运行。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="../contact.html#form">快速咨询</a>
+          <a class="btn ghost" href="../contact.html">联系方式</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 分级除尘协同 -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">分级除尘协同：各段负责不同粒径</h2>
+          <p class="p">通过“重力 → 旋风 → 干法布袋”分工协同，让系统更稳定、维护更可控。</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>设备段</th>
+                <th>典型除灰粒度</th>
+                <th>典型除灰比例</th>
+                <th>作用</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>重力除尘器</td>
+                <td>&gt; 50 μm</td>
+                <td>~ 50%</td>
+                <td>先脱大颗粒，降低后续冲击</td>
+              </tr>
+              <tr>
+                <td><b>高效旋风除尘器</b></td>
+                <td><b>&gt; 20–30 μm</b></td>
+                <td><b>~ 30%–35%</b></td>
+                <td>进一步减负，降低含锌灰富集</td>
+              </tr>
+              <tr>
+                <td>干法布袋除尘</td>
+                <td>&lt; 20 μm</td>
+                <td>~ 15%</td>
+                <td>精除尘，满足后端利用与排放要求</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note p muted">
+          注：以上粒径/比例可按你们具体项目验收数据替换。
+        </div>
+      </div>
+    </section>
+
+    <!-- 类型与选型 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">设备类型与选型</h2>
+          <p class="p">按流量、压力、含尘与布置条件选型，支持改造项目与非标定制。</p>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="card card-pad">
+            <h3 class="h3">轴向旋风除尘器（PW / DC）</h3>
+            <ul class="list">
+              <li>结构紧凑，适合空间受限布置</li>
+              <li>可按煤气流量与压力配置组合方案</li>
+              <li>强调压降、维护与系统适配</li>
+            </ul>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">切向旋风除尘器（ZRX）</h3>
+            <ul class="list">
+              <li>更强的旋转流场与分离能力</li>
+              <li>可结合流场/颗粒轨迹分析优化结构</li>
+              <li>支持平/立面布置配合现场条件</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="../cases.html">查看工程案例</a>
+          <a class="btn" href="../products.html">返回产品中心</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 典型工程表现 -->
+     <!--
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">典型工程表现（示例）</h2>
+          <p class="p">可用于官网展示，后续你把项目名称/现场照片给我，我帮你做成“案例卡片 + 图片”模块。</p>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="card card-pad">
+            <h3 class="h3">某高炉旋风改造（示例参数）</h3>
+            <ul class="list">
+              <li>煤气流量：19–20 万 Nm³/h</li>
+              <li>工作压力：约 0.19 MPa（设计压力 0.3 MPa）</li>
+              <li>初始含尘量：约 30 g/Nm³</li>
+              <li>重力后含尘量：约 15 g/Nm³</li>
+              <li><b>旋风后含尘量：约 4–5 g/Nm³</b></li>
+              <li><b>总除尘效率：约 85%</b></li>
+            </ul>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">灰资源化与分流建议</h3>
+            <ul class="list">
+              <li>重力灰/烧结灰：可送入烧结返矿，资源回收利用</li>
+              <li>含锌较高灰：为避免高炉锌富集，可评估外售/外运路径</li>
+              <li>结合厂内物流与环保合规条件定制落地方案</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="../contact.html#form">获取项目方案</a>
+          <a class="btn ghost" href="../contact.html">联系工程师</a>
+        </div>
+      </div>
+    </section>
+-->
+    <!-- 供货范围 -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">供货范围与订货信息</h2>
+          <p class="p">按流量、压力、含尘与现场布置定制，适配改造项目与新建项目。</p>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="card card-pad">
+            <h3 class="h3">成套供货（示例）</h3>
+            <ul class="list">
+              <li>旋风除尘器本体（轴向/切向，单筒或多筒组合）</li>
+              <li>灰斗与卸灰组件（按密封与安全要求配置）</li>
+              <li>阀门、仪表、就地控制柜（可选联锁）</li>
+              <li>安装指导、调试与验收支持</li>
+            </ul>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">订货需提供信息</h3>
+            <ul class="list">
+              <li>煤气流量（Nm³/h）、温度、压力</li>
+              <li>含尘量（g/Nm³）、粒径分布（如有）</li>
+              <li>接口条件：DN、标高、走向、空间限制</li>
+              <li>运行目标：减负/压降/检修周期/板结治理</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="../contact.html#form">快速咨询（推荐）</a>
+          <a class="btn" href="../products.html">返回产品中心</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚（严格对齐主页面结构） -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="footer-brand">中润轩机械</div>
+        <div class="footer-sub">河北中润轩机械设备有限公司</div>
+        <div class="footer-sub">Hebei Zhongrunxuan Machinery Equipment Co., Ltd.</div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">产品中心</div>
+        <a class="footer-link" href="./water-treatment.html">水处理设备与系统</a>
+        <a class="footer-link" href="./jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
+        <a class="footer-link" href="./gan_fa_chu_chen.html">高炉干法除尘系统</a>
+        <a class="footer-link" href="./cyclone-dust-collector.html">高效旋风除尘系统</a>
+        <a class="footer-link" href="./xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
+        <a class="footer-link" href="./ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+        <a class="footer-link" href="./huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+        <a class="footer-link" href="./wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">联系</div>
+        <div class="footer-text">电话：0317-4623118</div>
+        <div class="footer-text">邮箱：zrx8828@126.com</div>
+        <div class="footer-text">地址：河北省沧州市献县106国道西、陈庄镇陈西村</div>
+        <a class="footer-link" href="../contact.html">联系我们</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>© <span id="y"></span> 河北中润轩机械设备有限公司 · 保留所有权利</div>
+      <div>备案号：冀ICP备XXXXXXX号（示例）</div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

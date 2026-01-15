@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>中润轩机械 | 河北中润轩机械设备有限公司</title>
-  <meta name="description" content="河北中润轩机械设备有限公司（中润轩机械）专注工业环保设备与系统解决方案，涵盖水处理、布袋除尘、高炉煤气净化、煤气大放散回收、烧结系统模型等，提供设计、制造、安装与运维服务。" />
-  <meta name="keywords" content="河北中润轩机械设备有限公司,中润轩机械,水处理,布袋除尘,高炉煤气,煤气回收,大放散回收,烧结模型,环保设备,冶金环保" />
+  <title>产品中心 | 中润轩机械</title>
+  <meta name="description" content="中润轩机械产品中心：水处理、粉尘/除尘、煤气回收与治理、智能控制与运行技术、工程与非标定制。支持方案设计、成套供货、安装调试与运维服务。" />
+  <meta name="keywords" content="中润轩机械,水处理,旋风除尘,干法除尘,环境除尘,均压煤气全回收,TGR,休风放散,RGR,熵减模型,无扰动换炉,非标定制" />
   <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+
 <body>
   <!-- 顶部条 -->
   <div class="topbar">
@@ -29,12 +29,12 @@
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-  <img class="brand-logo" src="assets/img/logo.svg" alt="中润轩机械">
-  <div class="brand-text">
-    <div class="brand-name">中润轩机械</div>
-  </div>
-</a>
-
+        <img class="brand-logo" src="assets/img/logo.svg" alt="中润轩机械">
+        <div class="brand-text">
+          <div class="brand-name">中润轩机械</div>
+          <div class="brand-sub">Zhongrunxuan Machinery</div>
+        </div>
+      </a>
 
       <nav class="nav" aria-label="主导航">
         <a class="nav-link" href="index.html">首页</a>
@@ -53,12 +53,18 @@
           <a class="nav-link active" href="products.html">产品中心</a>
           <div class="dd-panel dd-grid">
             <a class="dd-item" href="products/water-treatment.html">水处理设备与系统</a>
+
+            <!-- ✅ 新增：旋风除尘 -->
+            <a class="dd-item" href="products/cyclone-dust-collector.html">高效旋风除尘系统</a>
+
             <a class="dd-item" href="products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
             <a class="dd-item" href="products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
             <a class="dd-item" href="products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
             <a class="dd-item" href="products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
             <a class="dd-item" href="products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
             <a class="dd-item" href="products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+
+            <!-- ✅ 非标 -->
             <a class="dd-item" href="products/custom-solution.html">非标定制解决方案</a>
           </div>
         </div>
@@ -73,9 +79,9 @@
 
     <!-- 移动端菜单 -->
     <div class="mnav" data-mnav>
-      <a href="index.html" class="mnav-link active">首页</a>
+      <a href="index.html" class="mnav-link">首页</a>
       <a href="about.html" class="mnav-link">关于我们</a>
-      <a href="products.html" class="mnav-link">产品中心</a>
+      <a href="products.html" class="mnav-link active">产品中心</a>
       <a href="cases.html" class="mnav-link">工程案例</a>
       <a href="news.html" class="mnav-link">新闻中心</a>
       <a href="contact.html" class="mnav-link">联系我们</a>
@@ -87,109 +93,151 @@
     </div>
   </header>
 
-<!-- ===== Products Content START (replace your placeholder section with this) ===== -->
-<!-- ===== Products Content START ===== -->
-<section class="section">
-  <div class="container">
-    <div style="max-width: 980px; margin: 0 auto;">
-      <h1 class="h2" style="margin-bottom: 10px;">产品中心</h1>
-      <p class="p" style="margin-top: 0;">
-        我们面向冶金及相关工业场景，提供工业环保与资源高效利用的系统解决方案。以下为当前主要产品与技术方向，点击可查看详情。
-      </p>
-    </div>
+  <main class="main">
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs"><a href="index.html">首页</a> / 产品中心</div>
+        <h1 class="hero-title">产品中心</h1>
 
-    <div class="grid" style="margin-top: 14px;">
-      <!-- 1 水处理 -->
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">水处理设备与系统</h2>
-        <p class="p">面向冶金浊环水/循环水等工况，强调出水稳定、占地集约与运维可控。</p>
-        <div class="actions" style="margin-top: 12px;">
-          <a class="btn primary" href="products/water-treatment.html">查看详情</a>
+        <div class="chips" id="product-filters" aria-label="产品分类筛选">
+          <button type="button" class="chip primary" data-filter="all">全部</button>
+          <button type="button" class="chip" data-filter="water">水处理</button>
+          <button type="button" class="chip" data-filter="dust">粉尘/除尘</button>
+          <button type="button" class="chip" data-filter="gas">煤气回收</button>
+          <button type="button" class="chip" data-filter="ai">智能控制</button>
+          <button type="button" class="chip" data-filter="custom">非标定制</button>
         </div>
       </div>
+    </section>
 
-      <!-- 2 均压煤气全回收 -->
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">“高效节能”型均压煤气全回收技术（TGR）</h2>
-        <p class="p">适配不同级别高炉装料节拍，回收效率高、能耗更低，运行更稳定。</p>
-        <div class="actions" style="margin-top: 12px;">
-          <a class="btn primary" href="products/jun_ya_mei_qi.html">查看详情</a>
+    <!-- 内容 -->
+    <section class="section">
+      <div class="container">
+
+        <!-- 水处理 -->
+        <section class="product-group" data-category="water">
+          <h2 class="group-title">水处理系统</h2>
+          <div class="grid">
+            <div class="card" style="padding:18px;">
+              <h3 class="h3" style="margin-top:0;">水处理设备与系统</h3>
+              <p class="p">面向冶金浊环水/循环水、工业废水与回用水场景，强调出水稳定、占地集约与运维可控。</p>
+              <div class="actions" style="margin-top:12px;">
+                <a class="btn primary" href="products/water-treatment.html">查看详情</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 粉尘/除尘 -->
+        <section class="product-group" data-category="dust">
+          <h2 class="group-title">粉尘与除尘系统</h2>
+          <div class="grid">
+
+            <!-- ✅ 新增：旋风除尘 -->
+            <div class="card" style="padding:18px;">
+              <h3 class="h3" style="margin-top:0;">高效旋风除尘系统</h3>
+              <p class="p">作为前端预除尘单元，降低系统粉尘负荷，改善后端布袋/干法除尘运行稳定性与滤袋寿命。</p>
+              <div class="actions" style="margin-top:12px;">
+                <a class="btn primary" href="products/cyclone-dust-collector.html">查看详情</a>
+              </div>
+            </div>
+
+            <div class="card" style="padding:18px;">
+              <h3 class="h3" style="margin-top:0;">高炉干法除尘系统</h3>
+              <p class="p">以高效净化、低能耗为核心，实现高炉煤气净化与粉尘资源回收的协同目标。</p>
+              <div class="actions" style="margin-top:12px;">
+                <a class="btn primary" href="products/gan_fa_chu_chen.html">查看详情</a>
+              </div>
+            </div>
+
+            <div class="card" style="padding:18px;">
+              <h3 class="h3" style="margin-top:0;">“高效节能”型环境除尘系统</h3>
+              <p class="p">面向岗位与厂房粉尘治理，强调低阻节能设计、智能运维与稳定达标排放。</p>
+              <div class="actions" style="margin-top:12px;">
+                <a class="btn primary" href="products/huan_jing_chu_chen.html">查看详情</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 煤气回收 -->
+        <section class="product-group" data-category="gas">
+          <h2 class="group-title">煤气回收与治理</h2>
+          <div class="grid">
+            <div class="card" style="padding:18px;">
+              <h3 class="h3" style="margin-top:0;">“高效节能”型均压煤气全回收技术（TGR）</h3>
+              <p class="p">适配不同级别高炉装料节拍，实现高回收效率、低能耗运行，并尽量减少对TRT系统影响。</p>
+              <div class="actions" style="margin-top:12px;">
+                <a class="btn primary" href="products/jun_ya_mei_qi.html">查看详情</a>
+              </div>
+            </div>
+
+            <div class="card" style="padding:18px;">
+              <h3 class="h3" style="margin-top:0;">高炉休风放散煤气综合治理技术（RGR）</h3>
+              <p class="p">面向休风与检修放散场景，实现煤气治理、环境改善与过程安全的系统化控制。</p>
+              <div class="actions" style="margin-top:12px;">
+                <a class="btn primary" href="products/xiu_feng_fang_san.html">查看详情</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 智能控制 -->
+        <section class="product-group" data-category="ai">
+          <h2 class="group-title">智能控制与运行技术</h2>
+          <div class="grid">
+            <div class="card" style="padding:18px;">
+              <h3 class="h3" style="margin-top:0;">高炉热风炉“熵减”人工智能燃烧模型</h3>
+              <p class="p">基于生产数据的智能预测与闭环控制，实现秒级调节，兼顾风温、能耗与环保协同。</p>
+              <div class="actions" style="margin-top:12px;">
+                <a class="btn primary" href="products/ran_shao_mo_xing.html">查看详情</a>
+              </div>
+            </div>
+
+            <div class="card" style="padding:18px;">
+              <h3 class="h3" style="margin-top:0;">高炉热风炉无扰动换炉技术</h3>
+              <p class="p">采用独立均压控制方式，避免换炉充压对冷风压力/流量扰动，提升高炉稳定顺行。</p>
+              <div class="actions" style="margin-top:12px;">
+                <a class="btn primary" href="products/wu_rao_dong_huan_lu.html">查看详情</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 非标 -->
+        <section class="product-group" data-category="custom">
+          <h2 class="group-title">工程与非标定制</h2>
+          <div class="grid">
+            <div class="card" style="padding:18px;">
+              <h3 class="h3" style="margin-top:0;">非标定制解决方案</h3>
+              <p class="p">针对复杂工况与改造项目，提供方案—设计—制造—交付的一体化非标服务。</p>
+              <div class="actions" style="margin-top:12px;">
+                <a class="btn primary" href="products/custom-solution.html">查看详情</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 咨询卡（不参与筛选） -->
+        <div class="card" style="padding:18px; margin-top:22px;">
+          <h2 class="h3" style="margin-top:0;">如何更快匹配合适方案？</h2>
+          <p class="p">
+            建议准备：行业与工段、处理对象（粉尘/烟气/废水/煤气等）、处理量与关键参数、现场空间与安装条件、
+            目标指标或标准、计划周期。我们可提供方案比选与落地建议。
+          </p>
+          <div class="actions" style="margin-top:12px;">
+            <a class="btn primary" href="contact.html#form">获取方案咨询</a>
+            <a class="btn outline" href="cases.html">查看工程案例</a>
+          </div>
         </div>
+
       </div>
+    </section>
+  </main>
 
-      <!-- 3 高炉干法除尘 -->
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">高炉干法除尘系统</h2>
-        <p class="p">以高效净化、低碳节能为核心，助力高炉煤气净化与资源回收。</p>
-        <div class="actions" style="margin-top: 12px;">
-          <a class="btn primary" href="products/gan_fa_chu_chen.html">查看详情</a>
-        </div>
-      </div>
-
-      <!-- 4 休风放散综合治理 -->
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">高炉休风放散煤气综合治理技术（RGR）</h2>
-        <p class="p">面向休风放散场景的回收与治理，降低环境影响并提升过程安全与可控性。</p>
-        <div class="actions" style="margin-top: 12px;">
-          <a class="btn primary" href="products/xiu_feng_fang_san.html">查看详情</a>
-        </div>
-      </div>
-
-      <!-- 5 熵减AI燃烧模型 -->
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">高炉热风炉“熵减”人工智能燃烧模型</h2>
-        <p class="p">基于生产数据的智能预测与闭环控制，秒级调节，兼顾风温、能耗与环保协同。</p>
-        <div class="actions" style="margin-top: 12px;">
-          <a class="btn primary" href="products/ran_shao_mo_xing.html">查看详情</a>
-        </div>
-      </div>
-
-      <!-- 6 环境除尘 -->
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">“高效节能”型环境除尘系统</h2>
-        <p class="p">面向岗位与厂房粉尘治理，强调低阻节能、智能运维与稳定达标排放。</p>
-        <div class="actions" style="margin-top: 12px;">
-          <a class="btn primary" href="products/huan_jing_chu_chen.html">查看详情</a>
-        </div>
-      </div>
-
-      <!-- 7 无扰动换炉 -->
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">高炉热风炉无扰动换炉技术</h2>
-        <p class="p">独立均压控制，避免换炉充压对冷风压力/流量扰动，提升高炉稳定顺行。</p>
-        <div class="actions" style="margin-top: 12px;">
-          <a class="btn primary" href="products/wu_rao_dong_huan_lu.html">查看详情</a>
-        </div>
-      </div>
-
-      <!-- 8 非标定制 -->
-      <div class="card" style="padding: 18px;">
-        <h2 class="h3" style="margin-top: 0;">非标定制解决方案</h2>
-        <p class="p">针对复杂工况与改造项目，提供方案—设计—制造—交付的一体化非标服务。</p>
-        <div class="actions" style="margin-top: 12px;">
-          <a class="btn primary" href="products/custom-solution.html">查看详情</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- 你原来的“如何选择合适方案”保留 -->
-    <div class="card" style="padding: 18px; margin-top: 18px;">
-      <h2 class="h3" style="margin-top: 0;">如何选择合适方案？</h2>
-      <p class="p">
-        为了更快匹配您的需求，建议准备以下信息：行业与工段、处理对象（粉尘/烟气/废水/煤气等）、处理量与关键参数、现场空间与安装条件、目标指标或标准、计划周期。
-      </p>
-      <div class="actions" style="margin-top: 12px;">
-        <a class="btn primary" href="contact.html">获取方案咨询</a>
-        <a class="btn outline" href="cases.html">查看工程案例</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ===== Products Content END ===== -->
-
-
-
-<!-- 页脚 -->
+  <!-- 页脚 -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-col">
@@ -200,12 +248,14 @@
       <div class="footer-col">
         <div class="footer-title">产品中心</div>
         <a class="footer-link" href="products/water-treatment.html">水处理设备与系统</a>
+        <a class="footer-link" href="products/cyclone-dust-collector.html">高效旋风除尘系统</a>
         <a class="footer-link" href="products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
         <a class="footer-link" href="products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
         <a class="footer-link" href="products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
         <a class="footer-link" href="products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
         <a class="footer-link" href="products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
         <a class="footer-link" href="products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+        <a class="footer-link" href="products/custom-solution.html">非标定制解决方案</a>
       </div>
       <div class="footer-col">
         <div class="footer-title">联系</div>
@@ -222,5 +272,37 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+
+  <!-- ✅ 分类筛选：点一个只显示该类，其他整组直接隐藏 -->
+  <script>
+    (function () {
+      const chips = document.querySelectorAll('#product-filters .chip');
+      const groups = document.querySelectorAll('.product-group[data-category]');
+      const VALID = ['all','water','dust','gas','ai','custom'];
+
+      function applyFilter(filter) {
+        chips.forEach(c => c.classList.remove('primary'));
+        const active = document.querySelector(`#product-filters .chip[data-filter="${filter}"]`);
+        if (active) active.classList.add('primary');
+
+        groups.forEach(g => {
+          const cat = g.dataset.category;
+          g.style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+        });
+      }
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          const filter = chip.dataset.filter || 'all';
+          applyFilter(filter);
+          history.replaceState(null, '', filter === 'all' ? location.pathname : `#${filter}`);
+        });
+      });
+
+      // 支持直接打开：products.html#dust
+      const init = (location.hash || '').replace('#','') || 'all';
+      applyFilter(VALID.includes(init) ? init : 'all');
+    })();
+  </script>
 </body>
 </html>

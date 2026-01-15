@@ -3,13 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>中润轩机械 | 河北中润轩机械设备有限公司</title>
-  <meta name="description" content="河北中润轩机械设备有限公司（中润轩机械）专注工业环保设备与系统解决方案，涵盖水处理、布袋除尘、高炉煤气净化、煤气大放散回收、烧结系统模型等，提供设计、制造、安装与运维服务。" />
-  <meta name="keywords" content="河北中润轩机械设备有限公司,中润轩机械,水处理,布袋除尘,高炉煤气,煤气回收,大放散回收,烧结模型,环保设备,冶金环保" />
+  <title>“高效节能”型均压煤气全回收技术 | 中润轩机械</title>
+  <meta name="description" content="中润轩机械“高效节能”型均压煤气全回收技术：采用箱体前引射工艺，实现回收时间短、耗能低、对TRT影响小的工程化方案，满足环保政策与稳定生产要求。" />
+  <meta name="keywords" content="均压煤气全回收,TGR,箱体前引射,高炉煤气回收,TRT发电,煤气治理,中润轩机械" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <!-- 本页补充样式：仅增强排版，不影响全站 -->
+  <style>
+    .lead{color:rgba(248,250,252,.86);max-width:980px}
+    .cards-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card-pad{padding:18px}
+
+    .kpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}
+    .kpi .stat{padding:16px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:0 10px 26px rgba(15,23,42,.04)}
+    .kpi .stat-num{font-size:22px;font-weight:900;color:var(--brand)}
+    .kpi .stat-label{font-size:12px;color:#475569;margin-top:4px}
+
+    .steps{display:grid;gap:12px;margin-top:14px}
+    .step{display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:start;border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:14px}
+    .step-num{width:40px;height:40px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-weight:900;background:rgba(32,138,204,.12);color:var(--brand2);border:1px solid rgba(32,138,204,.18)}
+
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+    .table{width:100%;border-collapse:collapse;min-width:880px}
+    .table th,.table td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;color:#0f172a}
+    .table th{background:#f8fafc;font-weight:900}
+    .muted{color:var(--muted)}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+
+    @media (max-width: 980px){
+      .kpi{grid-template-columns:1fr}
+      .cards-2{grid-template-columns:1fr}
+      .h1{font-size:26px}
+    }
+  </style>
 </head>
+
 <body>
-  <!-- 顶部条 -->
+  <!-- 顶部条（完全对齐 products.html） -->
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-left">
@@ -25,16 +55,16 @@
     </div>
   </div>
 
-  <!-- 导航 -->
+  <!-- 导航（完全对齐 products.html 的 dropdown 列表 + active 状态） -->
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="../index.html">
+      <a class="brand" href="index.html">
   <img class="brand-logo" src="../assets/img/logo.svg" alt="中润轩机械">
   <div class="brand-text">
     <div class="brand-name">中润轩机械</div>
+    <div class="brand-sub">Zhongrunxuan Machinery</div>
   </div>
 </a>
-
 
       <nav class="nav" aria-label="主导航">
         <a class="nav-link" href="../index.html">首页</a>
@@ -52,14 +82,15 @@
         <div class="nav-dd" data-dd>
           <a class="nav-link active" href="../products.html">产品中心</a>
           <div class="dd-panel dd-grid">
-            <a class="dd-item" href="../products/water-treatment.html">水处理设备与系统</a>
-            <a class="dd-item" href="../products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
-            <a class="dd-item" href="../products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
-            <a class="dd-item" href="../products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
-            <a class="dd-item" href="../products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
-            <a class="dd-item" href="../products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
-            <a class="dd-item" href="../products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
-            <a class="dd-item" href="../products/custom-solution.html">非标定制解决方案</a>
+            <a class="dd-item" href="./water-treatment.html">水处理设备与系统</a>
+            <a class="dd-item" href="./jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
+            <a class="dd-item" href="./gan_fa_chu_chen.html">高炉干法除尘系统</a>
+            <a class="dd-item" href="./cyclone-dust-collector.html">高效旋风除尘系统</a>
+            <a class="dd-item" href="./xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
+            <a class="dd-item" href="./ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+            <a class="dd-item" href="./huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+            <a class="dd-item" href="./wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+            <a class="dd-item" href="./custom-solution.html">非标定制解决方案</a>
           </div>
         </div>
 
@@ -71,11 +102,11 @@
       <button class="nav-toggle" data-nav-toggle aria-label="打开菜单">☰</button>
     </div>
 
-    <!-- 移动端菜单 -->
+    <!-- 移动端菜单（对齐全站） -->
     <div class="mnav" data-mnav>
-      <a href="../index.html" class="mnav-link active">首页</a>
+      <a href="../index.html" class="mnav-link">首页</a>
       <a href="../about.html" class="mnav-link">关于我们</a>
-      <a href="../products.html" class="mnav-link">产品中心</a>
+      <a href="../products.html" class="mnav-link active">产品中心</a>
       <a href="../cases.html" class="mnav-link">工程案例</a>
       <a href="../news.html" class="mnav-link">新闻中心</a>
       <a href="../contact.html" class="mnav-link">联系我们</a>
@@ -87,146 +118,240 @@
     </div>
   </header>
 
-
-<!--主内容-->
-<main class="main">
-  <!-- 页面标题区 -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <h1 class="h2">均压煤气全回收系统（TGR）</h1>
-        <p class="p">
-          面向高炉装料均压工况，通过系统化回收与安全控制，减少放散排放与能量损失，
-          实现高效回收、低能耗运行与环保达标的综合目标。
+  <main class="main">
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="../index.html">首页</a> / <a href="../products.html">产品中心</a> / 均压煤气全回收技术
+        </div>
+        <h1 class="hero-title">“高效节能”型均压煤气全回收技术（TGR）</h1>
+        <p class="hero-lead">
+          面向高炉装料均压放散工况，采用 <b>箱体前引射工艺</b>，实现煤气 <b>全回收</b>。
+          方案以 <b>回收时间短、耗能低、对 TRT 发电影响最小</b> 为目标，兼顾环保治理与稳定生产。
         </p>
       </div>
+    </section>
 
-      <!-- 概览三卡：场景/痛点/价值 -->
-      <div class="grid cards-3" style="margin-top:18px;">
-        <div class="card">
-          <div class="card-body">
-            <div class="tag">场景</div>
-            <div class="card-title">适用工况</div>
+    <!-- 核心关注点（来自PPT的关键话术：节能/高效/便维护） -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">核心目标</h2>
+          <p class="p">在实现全回收基本功能的前提下，强调节能、高效与检修维护便利。</p>
+        </div>
+
+        <div class="kpi">
+          <div class="stat">
+            <div class="stat-num">全回收</div>
+            <div class="stat-label">均压煤气全量回收，减少放散</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">低能耗</div>
+            <div class="stat-label">引射器开启时间短，耗能更低</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">短时间</div>
+            <div class="stat-label">回收过程更快，为提产留空间</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 背景：污染 + 利用率（写成官网可读版本，不堆表格） -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">为什么要做：放散污染必须治理</h2>
+          <p class="p">高炉煤气是炼铁主要副产气体，非正常状态直接放散会带来粉尘与 CO 排放风险，且造成能源浪费。</p>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="card card-pad">
+            <h3 class="h3">环境与安全风险</h3>
             <ul class="list">
-              <li>高炉装料均压煤气回收</li>
-              <li>不同炉容/不同装料节拍</li>
-              <li>新建系统与老线改造</li>
-              <li>与煤气管网/净化系统联动</li>
+              <li>放散烟尘浓度可显著超标，颗粒物排放量大</li>
+              <li>CO 扩散后存在环境与安全隐患</li>
+              <li>“不治理=风险高”，且监管趋严</li>
+            </ul>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">政策与行业趋势</h3>
+            <ul class="list">
+              <li>多地明确要求钢铁企业实施均压煤气全回收改造</li>
+              <li>治理进度与限产停产、绩效评级相关</li>
+              <li>降低放散率、提高利用率是节能降耗关键措施</li>
+            </ul>
+            <p class="p muted" style="margin-top:10px;">（政策与行业数据来源于你提供的技术介绍资料。）</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 工艺对比：箱体前/后/前后 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">工艺路线对比：为什么选择箱体前引射</h2>
+          <p class="p">不同引射布置方式的差异，本质体现在“能耗、回收时间、对TRT影响、系统效率”。</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>工艺路线</th>
+                <th>回收时间</th>
+                <th>引射器开启时间/能耗</th>
+                <th>对TRT影响</th>
+                <th>综合特点</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>箱体前引射（推荐）</b></td>
+                <td><b>短</b></td>
+                <td><b>短 / 低</b></td>
+                <td><b>最小</b></td>
+                <td>克服阻力能力强（除尘器+管网），引射效率高</td>
+              </tr>
+              <tr>
+                <td>箱体后引射</td>
+                <td>较长</td>
+                <td>较长 / 较高</td>
+                <td>较大</td>
+                <td>克服阻力小（管网），引射效率相对低</td>
+              </tr>
+              <tr>
+                <td>箱体前后引射</td>
+                <td>较长</td>
+                <td>最长 / 最高</td>
+                <td>最大</td>
+                <td>系统复杂，阀组倍增，能耗更高</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="p muted" style="margin-top:10px;">
+          结论：我们推荐 <b>箱体前引射工艺</b>，因为耗能最低、对 TRT 发电影响最小，全回收时间短，更利于高炉稳定与提产空间。
+        </p>
+      </div>
+    </section>
+
+    <!-- 方案要点：按PPT的关键过程写成“三步走” -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">方案要点：回收过程（工程化表达）</h2>
+          <p class="p">先利用压差自回收，再在低压阶段短时引射，实现全回收闭环。</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div>
+              <h3 class="h3">高压阶段：依靠压差自动回收</h3>
+              <p class="p">当料罐压力高于管网压力时，煤气经回收管路与除尘净化后自动进入低压煤气管网，减少外加能耗。</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">02</div>
+            <div>
+              <h3 class="h3">低压阶段：短时开启引射器强制送入管网</h3>
+              <p class="p">当压力接近管网压力时，短时开启引射器，将低压煤气强制送入管网，实现均压煤气全回收。</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">03</div>
+            <div>
+              <h3 class="h3">阻损控制：管径与除尘协同设计</h3>
+              <p class="p">煤气回收为“逐渐膨胀”过程，管路宜呈“管径逐步扩大”；通过合理管径与除尘布置，降低阻损、提升回收效率。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="../contact.html#form">获取方案与报价</a>
+          <a class="btn outline" href="../cases.html">查看工程案例</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 工程建议：旋风除尘器（与你新产品线联动） -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">工程建议：条件允许可增设高效旋风除尘</h2>
+          <p class="p">减少箱体灰量与阻损，降低检修维护与清灰工作量，有利于系统长期稳定运行。</p>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="card card-pad">
+            <h3 class="h3">管径建议（示例）</h3>
+            <ul class="list">
+              <li>除尘箱体前管径建议 ≥ DN400</li>
+              <li>除尘箱体后管径建议 ≥ DN500</li>
+              <li>以“阻损可控、回收顺畅”为设计导向</li>
+            </ul>
+            <p class="p muted" style="margin-top:10px;">注：具体以项目参数与总图布置为准。</p>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">与旋风除尘系统协同</h3>
+            <ul class="list">
+              <li>设置旋风除尘后，箱体内灰量显著减少</li>
+              <li>阻损更小，检修维护与清灰工作量更低</li>
+              <li>推荐方案：均压全回收 + 旋风前端减负</li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn primary" href="./cyclone-dust-collector.html">了解旋风除尘系统</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 咨询信息 -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">方案咨询需提供信息</h2>
+          <p class="p">你把这些参数发我，我就能快速给出初版方案与布置建议。</p>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="card card-pad">
+            <h3 class="h3">工况与系统参数</h3>
+            <ul class="list">
+              <li>高炉容积、装料节拍、均压工况描述</li>
+              <li>管网压力（kPa）与可用接口位置</li>
+              <li>回收目标：全回收/节能优先/提产优先</li>
+            </ul>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">现场条件</h3>
+            <ul class="list">
+              <li>除尘箱体位置与空间条件（总图/照片）</li>
+              <li>施工窗口与停产时间要求</li>
+              <li>是否考虑旋风前端减负（推荐）</li>
             </ul>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-body">
-            <div class="tag">问题</div>
-            <div class="card-title">典型痛点</div>
-            <ul class="list">
-              <li>均压放散造成无效排放</li>
-              <li>回收速度不足影响装料节拍</li>
-              <li>能耗偏高，运行成本大</li>
-              <li>联锁不完善带来安全风险</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <div class="tag">价值</div>
-            <div class="card-title">工程目标</div>
-            <ul class="list">
-              <li>回收效率高，节拍适配强</li>
-              <li>能耗更低，运行更经济</li>
-              <li>减少放散，环保压力更小</li>
-              <li>系统联锁完善，运行更安全</li>
-            </ul>
-          </div>
+        <div class="cta-row">
+          <a class="btn primary" href="../contact.html#form">提交参数获取方案</a>
+          <a class="btn ghost" href="mailto:zrx8828@126.com?subject=%E5%92%A8%E8%AF%A2%EF%BC%9A%E5%9D%87%E5%8E%8B%E7%85%A4%E6%B0%94%E5%85%A8%E5%9B%9E%E6%94%B6%EF%BC%88TGR%EF%BC%89&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E5%9D%87%E5%8E%8B%E7%85%A4%E6%B0%94%E5%85%A8%E5%9B%9E%E6%94%B6%EF%BC%88TGR%EF%BC%89%EF%BC%8C%E5%8F%82%E6%95%B0%E5%A6%82%E4%B8%8B%EF%BC%9A%0A1%EF%BC%89%E9%AB%98%E7%82%89%E5%AE%B9%E7%A7%AF/%E8%A3%85%E6%96%99%E8%8A%82%E6%8B%8D%EF%BC%9A%0A2%EF%BC%89%E7%AE%A1%E7%BD%91%E5%8E%8B%E5%8A%9B%EF%BC%88kPa%EF%BC%89%EF%BC%9A%0A3%EF%BC%89%E7%8E%B0%E5%9C%BA%E6%9D%A1%E4%BB%B6/%E6%80%BB%E5%9B%BE%EF%BC%9A%0A4%EF%BC%89%E7%9B%AE%E6%A0%87%EF%BC%9A">邮件咨询</a>
         </div>
       </div>
+    </section>
+  </main>
 
-      <!-- 核心优势 -->
-      <div class="card" style="padding:18px; margin-top:18px;">
-        <h2 class="h3" style="margin-top:0;">核心优势</h2>
-        <div class="grid cards-3" style="margin-top:12px;">
-          <div class="card" style="box-shadow:none;">
-            <div class="card-body">
-              <div class="tag">高效</div>
-              <div class="card-title">适配不同级别高炉装料需求</div>
-              <div class="card-desc">
-                在高冶炼强度工况下仍能保持回收系统稳定运行，满足环保要求，回收效率更高。
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="box-shadow:none;">
-            <div class="card-body">
-              <div class="tag">节能</div>
-              <div class="card-title">“节能型引射器”方案</div>
-              <div class="card-desc">
-                以更少量的高压净煤气消耗，实现更快的回收速度与更短的回收时间，降低系统能耗。
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="box-shadow:none;">
-            <div class="card-body">
-              <div class="tag">稳定</div>
-              <div class="card-title">系统联动与安全控制</div>
-              <div class="card-desc">
-                可按项目配置关键联锁与控制策略，提升运行稳定性与安全性，适配现场管网与工况波动。
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 系统组成 / 交付范围 -->
-      <div class="grid" style="margin-top:14px;">
-        <div class="card" style="padding:18px;">
-          <h2 class="h3" style="margin-top:0;">系统组成（可按项目配置）</h2>
-          <ul class="list">
-            <li>回收主管路及关键阀组（含必要的切换与保护）</li>
-            <li>节能型引射器单元及配套接口</li>
-            <li>缓冲/稳压与测控仪表（压力/流量/温度等）</li>
-            <li>控制系统与联锁（就地/远程，按项目范围）</li>
-            <li>与煤气净化、管网、放散系统的联动接口</li>
-          </ul>
-          <p class="p" style="margin-top:10px;">
-            * 具体范围以项目工况、接口条件与合同约定为准。
-          </p>
-        </div>
-
-        <div class="card" style="padding:18px;">
-          <h2 class="h3" style="margin-top:0;">工程交付内容</h2>
-          <ul class="list">
-            <li>方案设计与参数核算（节拍、回收时间、能耗核算等）</li>
-            <li>成套装备制造与厂内装配检查</li>
-            <li>安装指导、系统联调与投运支持</li>
-            <li>运行优化与技术服务（按项目需求）</li>
-          </ul>
-
-          <div class="actions" style="margin-top:14px;">
-            <a class="btn primary" href="../contact.html">获取方案与报价</a>
-            <a class="btn outline" href="../cases.html">查看工程案例</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 图片位（后续换实拍） -->
-      <div class="grid" style="margin-top:14px;">
-        <div class="card" style="padding:18px;">
-          <h2 class="h3" style="margin-top:0;">现场与设备展示</h2>
-          <div class="media ph" style="height:240px; border-radius: var(--radius2); background-image:url('../assets/img/project-1.jpg');"></div>
-          <p class="p" style="margin:10px 0 0;">
-            （后续可替换为：系统布置、设备现场、阀组与控制柜、投运照片等）
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-
-<!-- 页脚 -->
+  <!-- 页脚（完全对齐 products.html：三列 + bottom） -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-col">
@@ -234,24 +359,28 @@
         <div class="footer-sub">河北中润轩机械设备有限公司</div>
         <div class="footer-sub">Hebei Zhongrunxuan Machinery Equipment Co., Ltd.</div>
       </div>
+
       <div class="footer-col">
         <div class="footer-title">产品中心</div>
-        <a class="footer-link" href="products/water-treatment.html">水处理设备与系统</a>
-        <a class="footer-link" href="products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
-        <a class="footer-link" href="products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
-        <a class="footer-link" href="products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
-        <a class="footer-link" href="products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
-        <a class="footer-link" href="products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
-        <a class="footer-link" href="products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+        <a class="footer-link" href="./water-treatment.html">水处理设备与系统</a>
+        <a class="footer-link" href="./jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
+        <a class="footer-link" href="./gan_fa_chu_chen.html">高炉干法除尘系统</a>
+        <a class="footer-link" href="./cyclone-dust-collector.html">高效旋风除尘系统</a>
+        <a class="footer-link" href="./xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
+        <a class="footer-link" href="./ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+        <a class="footer-link" href="./huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+        <a class="footer-link" href="./wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
       </div>
+
       <div class="footer-col">
         <div class="footer-title">联系</div>
         <div class="footer-text">电话：0317-4623118</div>
         <div class="footer-text">邮箱：zrx8828@126.com</div>
         <div class="footer-text">地址：河北省沧州市献县106国道西、陈庄镇陈西村</div>
-        <a class="footer-link" href="contact.html">联系我们</a>
+        <a class="footer-link" href="../contact.html">联系我们</a>
       </div>
     </div>
+
     <div class="container footer-bottom">
       <div>© <span id="y"></span> 河北中润轩机械设备有限公司 · 保留所有权利</div>
       <div>备案号：冀ICP备XXXXXXX号（示例）</div>
