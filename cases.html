@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>工程案例 | 中润轩机械</title>
-  <meta name="description" content="中润轩机械工程案例：工业环保装备与系统项目实践，包括除尘治理、煤气回收与综合治理、水处理等方向。" />
-  <meta name="keywords" content="中润轩机械,工程案例,除尘,煤气回收,水处理,项目交付" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-    /* 深色 Hero（与产品/关于我们对齐） */
+  <meta name="description" content="中润轩机械工程案例：水处理、旋风除尘、干法除尘、环境除尘、均压煤气、休风放散、燃烧模型、无扰动换炉等方向的项目实践与交付记录。" />
+  <meta name="keywords" content="中润轩机械,工程案例,水处理,旋风除尘,干法除尘,环境除尘,均压煤气,休风放散,燃烧模型,无扰动换炉" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <style>
+    /* ===== hero：对齐全站深色科技风 ===== */
     .page-hero{
-      padding:56px 0 28px;
+      padding:56px 0 30px;
       background:
         radial-gradient(1100px 420px at 18% 18%, rgba(32,138,204,.22), transparent 55%),
         linear-gradient(180deg,#0b1220 0%,#0f172a 70%,#0b1220 100%);
@@ -21,110 +23,74 @@
     .hero-title{font-size:34px;line-height:1.15;font-weight:900;margin:0 0 10px}
     .hero-lead{color:rgba(248,250,252,.86);max-width:980px;margin:0}
 
-    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    /* ===== 筛选 chips（卡片感更强一点） ===== */
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:16px;
+    }
     .chip{
-      display:inline-flex;align-items:center;gap:6px;
-      padding:10px 14px;border-radius:999px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
       border:1px solid rgba(148,163,184,.35);
       background:rgba(255,255,255,.06);
       color:rgba(248,250,252,.92);
-      font-size:13px;font-weight:800;
-      text-decoration:none;
+      font-size:13px;
+      font-weight:800;
+      cursor:pointer;
       transition:.15s ease;
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
     }
     .chip:hover{background:rgba(255,255,255,.10)}
     .chip.primary{
       background:rgba(32,138,204,.18);
-      border-color:rgba(32,138,204,.40);
+      border-color:rgba(32,138,204,.45);
       color:#dff6ff;
     }
+    .chip svg{opacity:.9}
 
-    /* 案例列表 */
-    .cases-grid{
-      display:grid;
-      grid-template-columns:repeat(3, minmax(0, 1fr));
-      gap:18px;
-      align-items:stretch;
-    }
-    @media (max-width:1100px){
-      .cases-grid{grid-template-columns:repeat(2, minmax(0, 1fr));}
-    }
-    @media (max-width:640px){
-      .cases-grid{grid-template-columns:1fr;}
+    /* 手机端：一行滑动更稳 */
+    @media (max-width: 640px){
+      .chips{flex-wrap:nowrap; overflow:auto; padding-bottom:6px; -webkit-overflow-scrolling:touch;}
+      .chips::-webkit-scrollbar{height:6px;}
+      .chips::-webkit-scrollbar-thumb{background:rgba(148,163,184,.35); border-radius:999px;}
     }
 
-    .case-card{
-      overflow:hidden;
-      padding:0;
+    /* ===== cases grid ===== */
+    .cases-meta{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:12px;
+      margin:0 0 14px;
+      flex-wrap:wrap;
     }
+    .cases-count{
+      font-size:13px;
+      color: var(--muted);
+    }
+    .case-card .card-body{padding:14px}
+    .case-title{font-size:16px;font-weight:900;color:#0f172a;line-height:1.25}
+    .case-sub{margin-top:6px;color:#475569;font-size:13px}
+    .case-info{margin-top:10px;display:flex;flex-wrap:wrap;gap:10px;color:#64748b;font-size:12px}
+    .case-info span{display:inline-flex;gap:6px;align-items:center}
+    .case-actions{margin-top:12px}
+    .case-actions .btn{padding:10px 14px}
+
+    /* 让卡片图更像工程现场 */
     .case-cover{
-      width:100%;
-      height:180px;
-      background:#0b1220;
+      height:160px;
+      background:#d1d5db;
       background-size:cover;
       background-position:center;
-      position:relative;
     }
-    .case-cover::after{
-      content:"";
-      position:absolute; inset:0;
-      background:linear-gradient(180deg, rgba(11,18,32,.0) 0%, rgba(11,18,32,.35) 55%, rgba(11,18,32,.6) 100%);
-    }
-    .case-tag{
-      position:absolute; left:12px; top:12px;
-      z-index:1;
-      padding:8px 12px;
-      border-radius:999px;
-      background:rgba(255,255,255,.10);
-      border:1px solid rgba(148,163,184,.35);
-      color:#f8fafc;
-      font-size:12px;
-      font-weight:900;
-      backdrop-filter: blur(8px);
-    }
-
-    .case-body{padding:16px 16px 18px;}
-    .case-title{margin:0; font-size:18px; font-weight:900; line-height:1.25;}
-    .case-sub{margin:8px 0 0; color:var(--muted); font-weight:700;}
-    .case-meta{
-      margin-top:12px;
-      display:grid;
-      gap:6px;
-      color:var(--muted);
-      font-size:13px;
-      font-weight:700;
-    }
-    .case-meta b{color:var(--text); font-weight:900;}
-    .case-desc{margin:10px 0 0; color:var(--muted); line-height:1.6;}
-
-    /* 轻量表格（可选） */
-    .simple-table{
-      width:100%;
-      border-collapse:separate;
-      border-spacing:0;
-      overflow:hidden;
-      border:1px solid var(--line);
-      border-radius:16px;
-      background:#fff;
-    }
-    .simple-table th, .simple-table td{
-      padding:12px 14px;
-      border-bottom:1px solid var(--line);
-      text-align:left;
-      vertical-align:top;
-      font-size:14px;
-    }
-    .simple-table th{background:var(--alt); font-weight:900;}
-    .simple-table tr:last-child td{border-bottom:none;}
-    .pill{
-      display:inline-flex; align-items:center;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid rgba(32,138,204,.28);
-      background:rgba(32,138,204,.08);
-      color:#0b3a64;
-      font-weight:900;
-      font-size:12px;
+    @media (max-width: 980px){
+      .hero-title{font-size:28px}
     }
   </style>
 </head>
@@ -139,18 +105,18 @@
         <span>邮箱：<a href="mailto:zrx8828@126.com">zrx8828@126.com</a></span>
       </div>
       <div class="topbar-right">
-        <a class="lang active" href="index.html">中文</a>
+        <a class="lang active" href="./index.html">中文</a>
         <span class="sep">|</span>
-        <a class="lang" href="en/index.html">EN</a>
+        <a class="lang" href="./en/index.html">EN</a>
       </div>
     </div>
   </div>
 
-  <!-- 导航 -->
+  <!-- 导航（与全站一致：含 dropdown） -->
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img class="brand-logo" src="assets/img/logo.svg" alt="中润轩机械">
+      <a class="brand" href="./index.html">
+        <img class="brand-logo" src="./assets/img/logo.svg" alt="中润轩机械">
         <div class="brand-text">
           <div class="brand-name">中润轩机械</div>
           <div class="brand-sub">Zhongrunxuan Machinery</div>
@@ -158,203 +124,509 @@
       </a>
 
       <nav class="nav" aria-label="主导航">
-        <a class="nav-link" href="index.html">首页</a>
-
+        <a class="nav-link" href="./index.html">首页</a>
+        <a class="nav-link" href="./about/intro.html">关于我们</a>
         <div class="nav-dd" data-dd>
-          <a class="nav-link" href="about.html">关于我们</a>
-          <div class="dd-panel">
-            <a class="dd-item" href="about/intro.html">公司简介</a>
-            <a class="dd-item" href="about/capability.html">制造能力</a>
-            <a class="dd-item" href="about/honor.html">资质荣誉</a>
-            <a class="dd-item" href="about/culture.html">企业文化</a>
-          </div>
-        </div>
-
-        <div class="nav-dd" data-dd>
-          <a class="nav-link" href="products.html">产品中心</a>
+          <a class="nav-link" href="./products.html">产品中心</a>
           <div class="dd-panel dd-grid">
-            <a class="dd-item" href="products/water-treatment.html">水处理设备与系统</a>
-            <a class="dd-item" href="products/cyclone-dust-collector.html">高效旋风除尘系统</a>
-            <a class="dd-item" href="products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
-            <a class="dd-item" href="products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
-            <a class="dd-item" href="products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
-            <a class="dd-item" href="products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
-            <a class="dd-item" href="products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
-            <a class="dd-item" href="products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
-            <a class="dd-item" href="products/custom-solution.html">非标定制解决方案</a>
+            <a class="dd-item" href="./products/water-treatment.html">水处理设备与系统</a>
+            <a class="dd-item" href="./products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
+            <a class="dd-item" href="./products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
+            <a class="dd-item" href="./products/cyclone-dust-collector.html">高效旋风除尘系统</a>
+            <a class="dd-item" href="./products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
+            <a class="dd-item" href="./products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+            <a class="dd-item" href="./products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+            <a class="dd-item" href="./products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+            <a class="dd-item" href="./products/custom-solution.html">非标定制解决方案</a>
           </div>
         </div>
 
-        <a class="nav-link active" href="cases.html">工程案例</a>
-        <a class="nav-link" href="news.html">新闻中心</a>
-        <a class="nav-link" href="contact.html">联系我们</a>
+        <a class="nav-link active" href="./cases.html">工程案例</a>
+        <a class="nav-link" href="./news.html">新闻中心</a>
+        <a class="nav-link" href="./contact.html">联系我们</a>
       </nav>
 
       <button class="nav-toggle" data-nav-toggle aria-label="打开菜单">☰</button>
     </div>
 
     <div class="mnav" data-mnav>
-      <a href="index.html" class="mnav-link">首页</a>
-      <a href="about.html" class="mnav-link">关于我们</a>
-      <a href="products.html" class="mnav-link">产品中心</a>
-      <a href="cases.html" class="mnav-link active">工程案例</a>
-      <a href="news.html" class="mnav-link">新闻中心</a>
-      <a href="contact.html" class="mnav-link">联系我们</a>
+      <a href="./index.html" class="mnav-link">首页</a>
+      <a href="./about.html" class="mnav-link">关于我们</a>
+      <a href="./products.html" class="mnav-link">产品中心</a>
+      <a href="./cases.html" class="mnav-link active">工程案例</a>
+      <a href="./news.html" class="mnav-link">新闻中心</a>
+      <a href="./contact.html" class="mnav-link">联系我们</a>
       <div class="mnav-lang">
-        <a class="lang active" href="index.html">中文</a>
-        <span class="sep">|</span>
-        <a class="lang" href="en/index.html">EN</a>
+        <a class="lang active" href="./index.html">中文</a><span class="sep">|</span><a class="lang" href="./en/index.html">EN</a>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <!-- Hero -->
+    <!-- Hero + 筛选 -->
     <section class="page-hero">
       <div class="container">
-        <div class="breadcrumbs"><a href="index.html">首页</a> / 工程案例</div>
+        <div class="breadcrumbs"><a href="./index.html">首页</a> / 工程案例</div>
         <h1 class="hero-title">工程案例</h1>
+
+        <!-- ✅ 筛选 chips（8项 + 全部） -->
+        <div class="chips" aria-label="案例筛选">
+          <button class="chip primary" type="button" data-case-filter="all">
+            全部
+          </button>
+
+          <button class="chip" type="button" data-case-filter="water">
+            水处理
+          </button>
+
+          <button class="chip" type="button" data-case-filter="cyclone">
+            旋风除尘
+          </button>
+
+          <button class="chip" type="button" data-case-filter="dry-dust">
+            干法除尘
+          </button>
+
+          <button class="chip" type="button" data-case-filter="env_dust">
+            环境除尘
+          </button>
+
+          <button class="chip" type="button" data-case-filter="equalization_gas">
+            均压煤气
+          </button>
+
+          <button class="chip" type="button" data-case-filter="rgr">
+            休风放散
+          </button>
+
+          <button class="chip" type="button" data-case-filter="ai_combustion">
+            燃烧模型
+          </button>
+
+          <button class="chip" type="button" data-case-filter="no_disturbance">
+            无扰动换炉
+          </button>
+        </div>
       </div>
     </section>
 
-    <!-- 卡片列表 -->
+    <!-- 案例列表 -->
     <section class="section" id="list">
       <div class="container">
-        <div class="section-head">
-          <h2 class="h2">项目列表</h2>
+        <div class="cases-meta">
+          <div>
+            <h2 class="h2">项目列表</h2>
+            <p class="p">点击筛选后仅展示对应方向的项目卡片。</p>
+          </div>
+          <div class="cases-count">当前显示：<b data-case-count>0</b> 个项目</div>
         </div>
 
-        <div class="cases-grid">
-          <!-- 1：达钢-1号高炉布袋除尘（用你发的图） -->
-          <article class="card case-card">
-            <div class="case-cover" style="background-image:url('assets/img/case_dagang_bag.jpg');">
-              <div class="case-tag">粉尘/除尘</div>
-            </div>
-            <div class="case-body">
-              <h3 class="case-title">1号高炉布袋除尘项目</h3>
-              <div class="case-sub">项目记录 / 现场施工</div>
-              <div class="case-meta">
-                <div><b>地点：</b>达州市达川区 · 方大达钢（西门）</div>
-                <div><b>时间：</b>2024.11.25</div>
-                <div><b>单位：</b>河北中润轩</div>
-              </div>
-              <p class="case-desc">布袋除尘系统施工与现场配合，围绕安装组织、安全与节点推进开展工作。</p>
-            </div>
-          </article>
+        <div class="grid cards-3 cases-grid" data-cases-grid>
 
-          <!-- 2：北港渣处理除尘项目（用你发的图） -->
-          <article class="card case-card">
-            <div class="case-cover" style="background-image:url('assets/img/case_beigang_dust.jpg');">
-              <div class="case-tag">粉尘/除尘</div>
-            </div>
-            <div class="case-body">
-              <h3 class="case-title">北港渣处理除尘项目</h3>
-              <div class="case-sub">施工进度 / 现场管理</div>
-              <div class="case-meta">
-                <div><b>地点：</b>北海市铁山港区 · 广西北港新材料有限公司</div>
-                <div><b>时间：</b>2025.11.10</div>
-                <div><b>内容：</b>施工进度推进</div>
-              </div>
-              <p class="case-desc">除尘项目现场安装组织与进度控制，保障关键节点按计划推进。</p>
-            </div>
-          </article>
+          <!-- ===== 下面是示例卡片：你按真实项目替换即可 ===== -->
 
-          <!-- 3：占位案例（你后面继续加） -->
-          <article class="card case-card">
-            <div class="case-cover" style="background-image:url('assets/img/placeholder_case.jpg');">
-              <div class="case-tag">煤气回收</div>
-            </div>
-            <div class="case-body">
-              <h3 class="case-title">均压煤气回收与治理项目（示例）</h3>
-              <div class="case-sub">方案实施 / 系统集成</div>
-              <div class="case-meta">
-                <div><b>地点：</b>—</div>
-                <div><b>时间：</b>—</div>
-                <div><b>关键词：</b>回收利用 / 安全联锁 / 节能减排</div>
-              </div>
-              <p class="case-desc">可在此补充：项目背景、改造目标、主要设备与交付范围（2–3 句话即可）。</p>
-            </div>
-          </article>
-
-          <!-- 4：占位案例 -->
-          <article class="card case-card">
-            <div class="case-cover" style="background-image:url('assets/img/placeholder_case.jpg');">
-              <div class="case-tag">水处理</div>
-            </div>
-            <div class="case-body">
-              <h3 class="case-title">水处理回用项目（示例）</h3>
-              <div class="case-sub">成套交付 / 运维支持</div>
-              <div class="case-meta">
-                <div><b>地点：</b>—</div>
-                <div><b>时间：</b>—</div>
-                <div><b>关键词：</b>出水稳定 / 占地集约 / 运行可靠</div>
-              </div>
-              <p class="case-desc">可在此补充：处理对象（循环水/工业废水/回用水）、规模、交付方式等。</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="center" style="margin-top:18px;">
-          <a class="btn primary" href="contact.html">咨询类似项目</a>
-          <a class="btn outline" href="products.html">查看产品方案</a>
-        </div>
+<!-- 干法除尘：达钢 -->
+<article class="card case-card" data-category="dry-dust">
+  <a href="./products/gan_fa_chu_chen.html" aria-label="四川省达州钢铁集团有限责任公司｜达钢搬迁升级项目高炉煤气干式布袋除尘工程（2024年11月）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/dagang-dry-dust-2024-11.jpg')"></div>
+    <div class="card-body">
+      <div class="tag">干法除尘</div>
+      <div class="case-title">
+        四川省达州钢铁集团有限责任公司<br>
+        达钢搬迁升级项目高炉煤气干式布袋除尘工程（2024年11月）
       </div>
-    </section>
+      <div class="case-info">
+        <span>📍 四川 · 达州</span>
+        <span>🗓 2024-11</span>
+        <span>🏷 干法除尘</span>
+        <span>🧱 2 套</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
 
-    <!-- 简表汇总（给客户快速扫） -->
-    <section class="section section-alt" id="table">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="h2">简表汇总</h2>
+<article class="card case-card" data-category="dry-dust equalization_gas">
+  <a href="./products/jun_ya_mei_qi.html" aria-label="河钢产业升级及宣钢产能转移项目｜高炉区域EPC总承包工程（2018年7月）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/hbis-xuangang-tgr-2018-07.jpg')"></div>
+    <div class="card-body">
+      <div class="tag">干法除尘</div>
+      <div class="tag">均压煤气</div>
+      <div class="case-title">
+        河钢产业升级及宣钢产能转移项目<br>
+        高炉区域EPC总承包工程（2018年7月）
+      </div>
+      <div class="case-info">
+        <span>📍 河北 · 宣钢</span>
+        <span>🗓 2018-07</span>
+        <span>🏷 干法除尘 / 均压煤气</span>
+        <span>🧱 1 套布袋除尘器 + 3 套炉顶均压煤气回收装置</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<article class="card case-card" data-category="dry-dust">
+  <a href="./products/gan_fa_chu_chen.html" aria-label="天津天钢联合特钢有限公司｜1250m³高炉干法除尘工程（2020年）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/tiangang-dry-dust-2020.jpg')"></div>
+    <div class="card-body">
+      <div class="tag">干法除尘</div>
+      <div class="case-title">
+        天津天钢联合特钢有限公司<br>
+        2020 年升级改造项目 1250m³ 高炉干法除尘工程
+      </div>
+      <div class="case-info">
+        <span>📍 天津 · 天钢联合</span>
+        <span>🗓 2020</span>
+        <span>🏷 干法除尘</span>
+        <span>🧱 1 套</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<article class="card case-card" data-category="dry-dust">
+  <a href="./products/gan_fa_chu_chen.html" aria-label="天津荣程联合钢铁集团有限公司｜炼铁厂4#高炉恢复性大修干法除尘工程（2022年4月）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/rongcheng-dry-dust-2022-04.jpg')"></div>
+    <div class="card-body">
+      <div class="tag">干法除尘</div>
+      <div class="case-title">
+        天津荣程联合钢铁集团有限公司<br>
+        炼铁厂 4# 高炉恢复性大修干法除尘工程（2022年4月）
+      </div>
+      <div class="case-info">
+        <span>📍 天津 · 荣程联合</span>
+        <span>🗓 2022-04</span>
+        <span>🏷 干法除尘</span>
+        <span>🧱 1 套</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<article class="card case-card" data-category="dry-dust equalization_gas">
+  <a href="./products/jun_ya_mei_qi.html" aria-label="河北天柱钢铁集团有限公司｜城市钢厂搬迁高炉工程（2021年11月）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/tianzhu-dry-dust-gas-2021-11.jpg')"></div>
+    <div class="card-body">
+      <div class="tag">干法除尘</div>
+      <div class="tag">均压煤气</div>
+      <div class="case-title">
+        河北天柱钢铁集团有限公司<br>
+        城市钢厂搬迁高炉工程（2021年11月）
+      </div>
+      <div class="case-info">
+        <span>📍 河北 · 天柱钢铁</span>
+        <span>🗓 2021-11</span>
+        <span>🏷 干法除尘 / 均压煤气</span>
+        <span>🧱 2 套布袋除尘器 + 2 套均压煤气全回收除尘器</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+
+<!-- 环境除尘：北港 -->
+<article class="card case-card" data-category="env_dust">
+  <a href="./products/huan_jing_chu_chen.html" aria-label="北港｜渣处理除尘项目（2025年12月）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/beigang-slag-dust-2025-12.jpg')"></div>
+    <div class="card-body">
+      <div class="tag">环境除尘</div>
+      <div class="case-title">
+        北港渣处理除尘项目<br>
+        环境除尘系统建设（2025年12月）
+      </div>
+      <div class="case-info">
+        <span>📍（北港）</span>
+        <span>🗓 2025-12</span>
+        <span>🏷 环境除尘</span>
+        <span>🧱 渣处理除尘</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+
+<!-- 水处理（示例：你替换为真实案例或后续补齐） -->
+<article class="card case-card" data-category="water">
+  <a href="./products/water-treatment.html" aria-label="唐山建龙实业有限公司｜浊环水质提升技术改造项目（2017年10月）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/tangshan-jianlong-water-2017-10.jpg')"></div>
+    <div class="card-body">
+      <div class="tag">水处理</div>
+      <div class="case-title">
+        唐山建龙实业有限公司<br>
+        浊环水质提升技术改造项目（2017年10月）
+      </div>
+      <div class="case-info">
+        <span>📍 河北 · 唐山</span>
+        <span>🗓 2017-10</span>
+        <span>🏷 水处理</span>
+        <span>🧱 5 个主罐 + 1 个混合罐</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<article class="card case-card" data-category="water">
+  <a href="./products/water-treatment.html" aria-label="河南安钢周口｜高棒、普棒生产线EPC项目水处理系统（2021年8月）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/angang-zhoukou-water-2021-08.jpg')"></div>
+    <div class="card-body">
+      <div class="tag">水处理</div>
+      <div class="case-title">
+        河南安钢周口高棒、普棒生产线<br>
+        EPC项目水处理系统（2021年8月）
+      </div>
+      <div class="case-info">
+        <span>📍 河南 · 周口</span>
+        <span>🗓 2021-08</span>
+        <span>🏷 水处理</span>
+        <span>🧱 13 个主罐 + 3 个混合罐</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<article class="card case-card" data-category="water">
+  <a href="./products/water-treatment.html" aria-label="山西晋钢智造产业园｜高棒EPC总承包工程浊环水处理系统（2021年8月）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/jingang-gaobang-water-2021-08.jpg')"></div>
+    <div class="card-body">
+      <div class="tag">水处理</div>
+      <div class="case-title">
+        山西晋钢智造产业园<br>
+        高棒EPC总承包工程浊环水处理系统（2021年8月）
+      </div>
+      <div class="case-info">
+        <span>📍 山西 · 晋城</span>
+        <span>🗓 2021-08</span>
+        <span>🏷 水处理</span>
+        <span>🧱 16 个主罐 + 3 个混合罐</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<article class="card case-card" data-category="water">
+  <a href="./products/water-treatment.html" aria-label="临沂钢铁投资集团特钢有限公司｜年产270万吨优特钢项目水处理系统（2021年9月）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/linyi-special-steel-pressure-tank-2021-09.jpg')"></div>
+    <div class="card-body">
+      <div class="tag">水处理</div>
+      <div class="case-title">
+        临沂钢铁投资集团特钢有限公司<br>
+        年产270万吨优特钢项目（2021年9月）
+      </div>
+      <div class="case-info">
+        <span>📍 山东 · 临沂</span>
+        <span>🗓 2021-09</span>
+        <span>🏷 水处理</span>
+        <span>🧱 32 个主罐 + 9 个混合罐</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<article class="card case-card" data-category="water">
+  <a href="./products/water-treatment.html" aria-label="山西建龙实业有限公司｜轧钢一厂项目冶金污水净化处理系统（2019年8月）">
+    <div class="case-cover" style="background-image:url('./assets/img/cases/shanxi-jianlong-water-2019-08.png')"></div>
+    <div class="card-body">
+      <div class="tag">水处理</div>
+      <div class="case-title">
+        山西建龙实业有限公司轧钢一厂项目<br>
+        承压一体化冶金污水净化处理系统（2019年8月）
+      </div>
+      <div class="case-info">
+        <span>📍 山西 ·闻喜</span>
+        <span>🗓 2019-08</span>
+        <span>🏷 水处理</span>
+        <span>🧱 11 个主罐 + 2 个混合罐</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+
+<!-- 均压煤气（示例） -->
+<article class="card case-card" data-category="equalization_gas">
+  <a href="./products/jun_ya_mei_qi.html"
+     aria-label="山西建龙实业有限公司｜5#、6#高炉炉顶均压放散煤气回收系统改造工程">
+    <div class="case-cover"
+         style="background-image:url('./assets/img/cases/jianlong-pressure-gas-5-6bf.jpg')">
+    </div>
+    <div class="card-body">
+      <div class="tag">均压煤气</div>
+      <div class="case-title">
+        山西建龙实业有限公司<br>
+        5#、6#高炉炉顶均压放散煤气回收系统改造工程
+      </div>
+      <div class="case-info">
+        <span>📍 山西</span>
+        <span>🗓 年份未知</span>
+        <span>🏷 均压煤气</span>
+        <span>🧱 2 套均压煤气回收除尘器</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<article class="card case-card" data-category="equalization_gas">
+  <a href="./products/jun_ya_mei_qi.html" aria-label="青钢环保搬迁项目续建工程｜炼铁厂3#高炉均压煤气回收系统（2021年5月）">
+    <div class="case-cover"
+         style="background-image:url('./assets/img/cases/qinggang-equalization-gas-recovery-2021-05.jpg')">
+    </div>
+    <div class="card-body">
+      <div class="tag">均压煤气</div>
+      <div class="case-title">
+        青钢环保搬迁项目续建工程<br>
+        炼铁厂 3# 高炉均压煤气回收系统（2021年5月）
+      </div>
+      <div class="case-info">
+        <span>📍 山东 · 青岛</span>
+        <span>🗓 2021-05</span>
+        <span>🏷 均压煤气</span>
+        <span>🧱 1 套系统</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<article class="card case-card" data-category="equalization_gas">
+  <a href="./products/jun_ya_mei_qi.html"
+     aria-label="吕梁建龙实业有限公司｜1800m³高炉均压放散煤气回收系统（2021年5月）">
+    <div class="case-cover"
+         style="background-image:url('./assets/img/cases/lvliang-jianlong-equalization-gas-1800m3-2021-05.jpg')">
+    </div>
+    <div class="card-body">
+      <div class="tag">均压煤气</div>
+      <div class="case-title">
+        吕梁建龙实业有限公司<br>
+        1800m³ 高炉均压放散煤气回收系统（2021年5月）
+      </div>
+      <div class="case-info">
+        <span>📍 山西 · 吕梁</span>
+        <span>🗓 2021-05</span>
+        <span>🏷 均压煤气</span>
+        <span>🧱 1 套</span>
+      </div>
+      <div class="case-actions">
+        <span class="btn outline">查看相关产品</span>
+      </div>
+    </div>
+  </a>
+</article>
+
+          <!-- 休风放散（示例） -->
+          <article class="card case-card" data-category="rgr">
+            <a href="./products/xiu_feng_fang_san.html" aria-label="休风放散煤气综合治理案例（示例）">
+              <div class="case-cover" style="background-image:url('./assets/img/hero_4.jpg')"></div>
+              <div class="card-body">
+                <div class="tag">休风放散</div>
+                <div class="case-title">休风放散煤气综合治理（RGR）应用（示例）</div>
+                <div class="case-sub">
+                  面向休风/检修等放散工况，系统化治理与回收利用，强调安全、合规与运行可持续。
+                </div>
+                <div class="case-info">
+                  <span>🛡 安全优先</span>
+                  <span>🌿 治理与回收</span>
+                  <span>📈 可持续运行</span>
+                </div>
+                <div class="case-actions">
+                  <span class="btn outline">查看相关产品</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- 燃烧模型（示例） -->
+          <article class="card case-card" data-category="ai_combustion">
+            <a href="./products/ran_shao_mo_xing.html" aria-label="熵减AI燃烧模型案例（示例）">
+              <div class="case-cover" style="background-image:url('./assets/img/hero_5.jpg')"></div>
+              <div class="card-body">
+                <div class="tag">燃烧模型</div>
+                <div class="case-title">热风炉“熵减”AI 燃烧模型落地（示例）</div>
+                <div class="case-sub">
+                  持续采集运行数据形成规模，用智能算法降低调节频率与滞后，提高燃烧控制精度与节能水平。
+                </div>
+                <div class="case-info">
+                  <span>📊 数据闭环</span>
+                  <span>🤖 智能优化</span>
+                  <span>💡 节能降耗</span>
+                </div>
+                <div class="case-actions">
+                  <span class="btn outline">查看相关产品</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- 无扰动换炉（示例） -->
+          <article class="card case-card" data-category="no_disturbance">
+            <a href="./products/wu_rao_dong_huan_lu.html" aria-label="无扰动换炉技术案例（示例）">
+              <div class="case-cover" style="background-image:url('./assets/img/hero_6.jpg')"></div>
+              <div class="card-body">
+                <div class="tag">无扰动换炉</div>
+                <div class="case-title">热风炉无扰动换炉技术应用（示例）</div>
+                <div class="case-sub">
+                  独立均压控制，压缩空气取代冷风均压，减少换炉充压对冷风压力/流量的不利影响，支持闭环控制。
+                </div>
+                <div class="case-info">
+                  <span>🔁 并联系统</span>
+                  <span>🎛 闭环控制</span>
+                  <span>📉 降扰动</span>
+                </div>
+                <div class="case-actions">
+                  <span class="btn outline">查看相关产品</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
         </div>
 
-        <div class="card" style="padding: 14px;">
-          <table class="simple-table" aria-label="工程案例汇总表">
-            <thead>
-              <tr>
-                <th style="width:160px;">类别</th>
-                <th>项目名称</th>
-                <th style="width:260px;">地点</th>
-                <th style="width:140px;">时间</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="pill">粉尘/除尘</span></td>
-                <td>1号高炉布袋除尘项目</td>
-                <td>达州市达川区 · 方大达钢（西门）</td>
-                <td>2024.11.25</td>
-              </tr>
-              <tr>
-                <td><span class="pill">粉尘/除尘</span></td>
-                <td>北港渣处理除尘项目</td>
-                <td>北海市铁山港区 · 广西北港新材料</td>
-                <td>2025.11.10</td>
-              </tr>
-              <tr>
-                <td><span class="pill">煤气回收</span></td>
-                <td>均压煤气回收与治理项目（示例）</td>
-                <td>—</td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td><span class="pill">水处理</span></td>
-                <td>水处理回用项目（示例）</td>
-                <td>—</td>
-                <td>—</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="center" style="margin-top:18px;">
-          <a class="btn primary" href="contact.html">获取方案与报价</a>
+        <!-- CTA -->
+        <div class="actions" style="margin-top:18px; justify-content:center;">
+          <a class="btn primary" href="./contact.html">获取方案与报价</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- 页脚 -->
+  <!-- 页脚（对齐你全站，包含旋风&非标） -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-col">
@@ -384,12 +656,55 @@
         <a class="footer-link" href="contact.html">联系我们</a>
       </div>
     </div>
+
     <div class="container footer-bottom">
       <div>© <span id="y"></span> 河北中润轩机械设备有限公司 · 保留所有权利</div>
       <div>备案号：冀ICP备XXXXXXX号（示例）</div>
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <!-- ✅ 过滤逻辑（独立写在本页，不影响 main.js） -->
+  <script>
+  (function(){
+    const chips = Array.from(document.querySelectorAll('[data-case-filter]'));
+    const cards = Array.from(document.querySelectorAll('.case-card[data-category]'));
+    const countEl = document.querySelector('[data-case-count]');
+
+    if (!chips.length || !cards.length) return;
+
+    function setActiveChip(value){
+      chips.forEach(btn => btn.classList.toggle('primary', btn.getAttribute('data-case-filter') === value));
+    }
+
+    function applyFilter(value){
+      const v = value || 'all';
+      let shown = 0;
+
+      cards.forEach(card => {
+        const cats = (card.getAttribute('data-category') || '').trim().split(/\s+/);
+        const ok = (v === 'all') || cats.includes(v);
+        card.style.display = ok ? '' : 'none';
+        if (ok) shown += 1;
+      });
+
+      if (countEl) countEl.textContent = String(shown);
+      setActiveChip(v);
+
+      // 记住筛选：?cat=water
+      const url = new URL(window.location.href);
+      if (v === 'all') url.searchParams.delete('cat');
+      else url.searchParams.set('cat', v);
+      window.history.replaceState({}, '', url.toString());
+    }
+
+    chips.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.getAttribute('data-case-filter'))));
+
+    const initCat = new URL(window.location.href).searchParams.get('cat') || 'all';
+    applyFilter(initCat);
+  })();
+  </script>
+
+  <!-- 你的全站脚本（移动端菜单/年份等） -->
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>

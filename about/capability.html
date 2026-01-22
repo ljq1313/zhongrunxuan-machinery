@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>制造能力 | 中润轩机械</title>
-  <meta name="description" content="中润轩机械制造能力：设计协同—制造加工—装配检验—发运交付—现场配合，全流程能力支持工业环保装备与成套系统的项目化制造与稳定交付。" />
-  <meta name="keywords" content="中润轩机械,制造能力,工厂,项目化交付,非标制造,除尘设备,水处理设备,煤气回收" />
+  <meta name="description" content="中润轩机械制造能力：厂区与车间、生产设备、设计支撑三位一体，支持工业环保装备与成套系统的项目化制造与稳定交付。" />
+  <meta name="keywords" content="中润轩机械,制造能力,工厂,车间,加工中心,卷管机,埋弧焊,非标制造,项目交付" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 
   <style>
@@ -21,26 +21,108 @@
     .breadcrumbs a{color:rgba(248,250,252,.92);text-decoration:underline;text-decoration-color:rgba(248,250,252,.25)}
     .hero-title{font-size:34px;line-height:1.15;font-weight:900;margin:0 0 10px}
     .hero-lead{color:rgba(248,250,252,.86);max-width:980px;margin:0}
-
-    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-    .chip{
-      display:inline-flex;align-items:center;gap:6px;
-      padding:10px 14px;border-radius:999px;
-      border:1px solid rgba(148,163,184,.35);
-      background:rgba(255,255,255,.06);
-      color:rgba(248,250,252,.92);
-      font-size:13px;font-weight:800;
-      text-decoration:none;
-      transition:.15s ease;
-    }
-    .chip:hover{background:rgba(255,255,255,.10)}
-    .chip.primary{
-      background:rgba(32,138,204,.18);
-      border-color:rgba(32,138,204,.40);
-      color:#dff6ff;
-    }
-    html{scroll-behavior:smooth;}
     @media (max-width:900px){ .hero-title{font-size:28px} }
+    /* ===== capability 制造能力：节奏化图文模块 ===== */
+.cap-lead{
+  max-width: 920px;
+  margin: 0 auto 44px;
+  color:#374151;
+  font-size:15px;
+  line-height:1.9;
+}
+.cap-lead p{margin:0 0 16px}
+.cap-lead p:last-child{margin-bottom:0}
+
+.cap-stack{margin-top: 8px;}
+
+.cap-item{
+  display:grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 56px;
+  align-items:center;
+  padding: 42px 0;
+  border-top: 1px solid #e5e7eb;
+}
+.cap-item:first-child{border-top:0}
+
+.cap-item.is-reverse{
+  grid-template-columns: 1fr 1.05fr;
+}
+.cap-item.is-reverse .cap-text{order:2}
+.cap-item.is-reverse .cap-media{order:1}
+
+.cap-kicker{
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.8px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.cap-title{
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px;
+}
+
+.cap-desc{
+  font-size: 14px;
+  line-height: 1.85;
+  color: #475569;
+  margin: 0 0 14px;
+}
+
+.cap-list{
+  margin: 0;
+  padding-left: 18px;
+  color:#334155;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.cap-list li{margin: 6px 0}
+
+.cap-photo{
+  width:100%;
+  height: 380px;              /* 让图片块更“主视觉” */
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: linear-gradient(180deg, rgba(2,6,23,.05), rgba(2,6,23,.02));
+  box-shadow: 0 12px 30px rgba(15,23,42,.06);
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+}
+.cap-photo-tip{
+  width:100%;
+  padding:10px 12px;
+  font-size:12px;
+  color:#475569;
+  background: rgba(255,255,255,.78);
+  border-top: 1px solid rgba(229,231,235,.9);
+}
+
+.cap-actions{
+  margin-top: 22px;
+  display:flex;
+  gap: 12px;
+  justify-content:center;
+}
+
+/* 移动端 */
+@media (max-width: 900px){
+  .cap-item,
+  .cap-item.is-reverse{
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 30px 0;
+  }
+  .cap-item.is-reverse .cap-text{order:1}
+  .cap-item.is-reverse .cap-media{order:2}
+  .cap-photo{height: 240px;}
+  .cap-actions{justify-content:flex-start;}
+}
+
   </style>
 </head>
 
@@ -76,12 +158,12 @@
         <a class="nav-link" href="../index.html">首页</a>
 
         <div class="nav-dd" data-dd>
-          <a class="nav-link active" href="../about.html">关于我们</a>
+          <a class="nav-link active" href="./intro.html">关于我们</a>
           <div class="dd-panel">
-            <a class="dd-item" href="../about/intro.html">公司简介</a>
-            <a class="dd-item active" href="../about/capability.html">制造能力</a>
-            <a class="dd-item" href="../about/honor.html">资质荣誉</a>
-            <a class="dd-item" href="../about/culture.html">企业文化</a>
+            <a class="dd-item" href="./intro.html">公司简介</a>
+            <a class="dd-item active" href="./capability.html">制造能力</a>
+            <a class="dd-item" href="./honor.html">资质荣誉</a>
+            <a class="dd-item" href="./culture.html">企业文化</a>
           </div>
         </div>
 
@@ -108,10 +190,10 @@
       <button class="nav-toggle" data-nav-toggle aria-label="打开菜单">☰</button>
     </div>
 
-    <!-- ✅ 移动端菜单：active 应在“关于我们” -->
+    <!-- 移动端菜单 -->
     <div class="mnav" data-mnav>
       <a href="../index.html" class="mnav-link">首页</a>
-      <a href="../about.html" class="mnav-link active">关于我们</a>
+      <a href="./intro.html" class="mnav-link active">关于我们</a>
       <a href="../products.html" class="mnav-link">产品中心</a>
       <a href="../cases.html" class="mnav-link">工程案例</a>
       <a href="../news.html" class="mnav-link">新闻中心</a>
@@ -125,262 +207,129 @@
   </header>
 
   <main class="main">
-    <!-- ✅ Hero -->
+    <!-- Hero -->
     <section class="page-hero">
       <div class="container">
-        <div class="breadcrumbs"><a href="../index.html">首页</a> / <a href="../about.html">关于我们</a> / 制造能力</div>
-        <h1 class="hero-title">制造能力</h1>
-        <p class="hero-lead">
-          以工程交付为导向，构建“设计协同—制造加工—装配检验—发运交付—现场配合”的全流程能力，
-          支持工业环保装备与成套系统的项目化制造与稳定交付。
-        </p>
-      </div>
-    </section>
+        <div class="breadcrumbs"><a href="../index.html">首页</a> / <a href="./intro.html">关于我们</a></div>
+        <h1 class="hero-title">关于我们</h1>
 
-    <!-- 原内容：关键数字 -->
-    <section class="section" id="stats">
-      <div class="container">
-        <div class="stats">
-          <div class="stat">
-            <div class="stat-num">43 亩</div>
-            <div class="stat-label">自有厂区占地</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">项目制</div>
-            <div class="stat-label">交付组织方式</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">非标</div>
-            <div class="stat-label">定制制造能力</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">全流程</div>
-            <div class="stat-label">制造与工程协同</div>
-          </div>
+        <div class="chips" aria-label="关于我们导航">
+          <a class="chip" href="./intro.html">公司简介</a>
+          <a class="chip primary" href="./capability.html">制造能力</a>
+          <a class="chip" href="./honor.html">资质荣誉</a>
+          <a class="chip" href="./culture.html">企业文化</a>
         </div>
       </div>
     </section>
 
-    <!-- 厂区与基础设施（保留你原内容） -->
-    <section class="section section-alt" id="base">
-      <div class="container split">
-        <div class="split-text">
-          <h2 class="h2">厂区规模与基础设施</h2>
-          <p class="p">
-            公司自有生产制造基地，占地约 <strong>43 亩</strong>，具备完善的生产、装配、检测与发运条件，
-            可满足中大型工业环保装备及成套系统的制造与交付需求。
+    <!-- 内容区 -->
+    <section class="section">
+      <div class="container">
+
+        <!-- 统一标题（方案二） -->
+        <div class="section-title">
+          <h1>制造能力</h1>
+          <span></span>
+        </div>
+
+        <!-- 顶部两段概括语 -->
+        <div class="cap-lead">
+          <p>
+            公司建有自有生产制造基地，厂区占地约 43 亩，配备大型生产车间（内部作业面积约 50,000 平方米）
+            及附属加工车间（占地约 20,000 平方米），具备较为完善的生产、装配与发运条件。
           </p>
-          <ul class="list">
-            <li>生产功能分区清晰：结构加工 / 设备制造 / 装配与预制 / 仓储发运</li>
-            <li>支持成套设备厂内预装、分段组装与整体发运组织</li>
-            <li>适配工程项目的多批次交付与节点管理（按项目计划推进）</li>
-            <li>可根据项目需要开展防腐、保温、衬里等工序协同（按要求配置）</li>
-          </ul>
-
-          <div class="actions" style="margin-top: 12px;">
-            <a class="btn primary" href="../contact.html">获取方案与报价</a>
-            <a class="btn outline" href="../cases.html">查看工程案例</a>
-          </div>
-        </div>
-
-        <div class="split-media">
-          <div class="media-grid">
-            <div class="media ph" style="background-image:url('../assets/img/factory_1.png')">
-              <span class="media-cap">厂区 / 车间</span>
-            </div>
-            <div class="media ph" style="background-image:url('../assets/img/delivery_background.png')">
-              <span class="media-cap">装配 / 发运</span>
-            </div>
-          </div>
-          <div class="note">提示：把你们厂区、车间、装配、发运照片替换到 assets/img/ 里即可。</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 制造与加工能力（保留） -->
-    <section class="section" id="make">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="h2">制造与加工能力</h2>
-          <p class="p">围绕工业环保装备与系统集成需求，覆盖结构加工、设备制造、组件预制与成套装配等环节。</p>
-        </div>
-
-        <div class="grid cards-3">
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">加工</div>
-              <div class="card-title">结构件加工与焊接</div>
-              <div class="card-desc">按图纸与工艺要求组织下料、组对、焊接与校形，保障结构精度与装配质量。</div>
-              <ul class="list">
-                <li>箱体/框架/支座等结构件加工</li>
-                <li>焊接过程控制与外观检查</li>
-                <li>关键尺寸复核与装配适配</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">制造</div>
-              <div class="card-title">设备本体制造</div>
-              <div class="card-desc">针对除尘、烟气治理、水处理、煤气系统等设备，支持项目化制造与定制化配置。</div>
-              <ul class="list">
-                <li>设备本体加工与部件装配</li>
-                <li>阀门/仪表/接口预留与适配</li>
-                <li>按工况要求进行材质与防腐选型</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">预制</div>
-              <div class="card-title">组件预制与模块化交付</div>
-              <div class="card-desc">支持管路、组件、模块预制，提升现场安装效率，减少工期与返工风险。</div>
-              <ul class="list">
-                <li>管段/组件预制与标识</li>
-                <li>模块化分段装配与打包发运</li>
-                <li>与现场安装条件协同优化</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid" style="margin-top: 14px;">
-          <div class="card" style="padding: 18px;">
-            <h3 class="h3" style="margin-top:0;">可按项目补充的“硬指标”（建议后续填上）</h3>
-            <p class="p" style="margin-top:6px;">
-              这里写得越量化越有说服力。你们后面有数据的话，补上下面几项即可：
-            </p>
-            <ul class="list">
-              <li>厂房建筑面积（㎡）、装配区面积（㎡）、仓储面积（㎡）</li>
-              <li>主要加工设备清单（如：数控切割/折弯/卷板/焊机/起重设备等）</li>
-              <li>最大可制造单体设备尺寸/重量、最大起吊能力（t）</li>
-              <li>年产能或交付能力（按“项目/套”或“吨位”描述）</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 质量与过程控制（保留，增加 id） -->
-    <section class="section section-alt" id="process">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="h2">质量管理与过程控制</h2>
-          <p class="p">以过程可追溯、节点可验证为原则，确保设备制造质量满足工程应用与长期运行要求。</p>
-        </div>
-
-        <div class="grid cards-3">
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">进料</div>
-              <div class="card-title">原材料与部件检验</div>
-              <div class="card-desc">对关键材料、外协件、采购部件进行入厂核验与抽检，确保可用性与一致性。</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">过程</div>
-              <div class="card-title">关键工序检查</div>
-              <div class="card-desc">对焊接、装配、尺寸偏差、防腐等关键环节设置检查点，降低返工风险。</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">出厂</div>
-              <div class="card-title">装配与出厂检验</div>
-              <div class="card-desc">成套装配完成后进行外观、接口、装配一致性检查，按要求提供出厂资料。</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" style="padding:18px; margin-top:14px;">
-          <h3 class="h3" style="margin-top:0;">资料与追溯（可选写得更强）</h3>
-          <ul class="list">
-            <li>关键部件标识与装配记录（按项目归档）</li>
-            <li>出厂清单、装箱清单、安装说明与维护建议（可按项目提供）</li>
-            <li>如涉及验收：可配合提供必要的检验/测试记录（按合同范围）</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 工程交付与现场协同（保留，增加 id） -->
-    <section class="section" id="delivery">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="h2">工程交付与现场协同能力</h2>
-          <p class="p">制造不是终点。我们更关注“到现场能装、能调、能稳定运行”。</p>
-        </div>
-
-        <div class="grid" style="gap:14px;">
-          <div class="card" style="padding:18px;">
-            <h3 class="h3" style="margin-top:0;">交付组织</h3>
-            <ul class="list">
-              <li>按项目计划组织制造与分批交付，关键节点可控</li>
-              <li>支持现场安装指导、接口核对与问题闭环</li>
-              <li>配合系统调试与试运行，推动稳定投运（按合同范围）</li>
-            </ul>
-          </div>
-
-          <div class="card" style="padding:18px;">
-            <h3 class="h3" style="margin-top:0;">协同方式</h3>
-            <ul class="list">
-              <li>与业主、总包、设计院等单位进行技术对接与方案深化</li>
-              <li>结合现场空间、标高、管网条件优化布置与安装可行性</li>
-              <li>支持改造项目：减少停机时间、降低施工风险（按现场条件评估）</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 非标与定制（保留） -->
-    <section class="section section-alt" id="custom">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="h2">非标定制与项目化制造能力</h2>
-          <p class="p">
-            面对不同工况、空间条件与环保指标要求，我们具备非标设备与定制化系统的制造能力，
-            强调可维护性、可靠性与长期综合成本可控。
+          <p>
+            围绕工业环保装备与系统集成需求，公司形成“车间与产能组织—设备与关键工序—设计支撑与协同交付”的能力链条，
+            满足结构件制造、设备加工、成套预制及项目交付过程中的技术协同需求。
           </p>
         </div>
 
-        <div class="grid cards-3">
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">定制</div>
-              <div class="card-title">按工况定制</div>
-              <div class="card-desc">根据介质特性、温度含湿、粉尘负荷、腐蚀条件等进行结构与材质优化。</div>
+        <!-- 三项能力：图文交替 -->
+        <div class="cap-stack">
+
+          <!-- 01 -->
+          <div class="cap-item">
+            <div class="cap-text">
+              <div class="cap-kicker">01 / 生产车间</div>
+              <h2 class="cap-title">两座车间 · 覆盖制造与装配</h2>
+              <p class="cap-desc">
+                大型生产车间内部作业面积约 <b>50,000㎡</b>，满足中大型装备制造、装配与预制；
+                附属加工车间占地约 <b>20,000㎡</b>，用于加工、周转及配套作业，提升生产组织效率与交付稳定性。
+              </p>
+              <ul class="cap-list">
+                <li>空间与工序组织更匹配项目化交付节奏</li>
+                <li>分区明确，便于加工—装配—发运串联</li>
+                <li>为成套系统预制与现场安装提供支撑</li>
+              </ul>
+            </div>
+
+            <div class="cap-media">
+              <!-- 图片占位：后续替换为真实车间照片 -->
+              <div class="cap-photo ph">
+                <div class="cap-photo-tip">图片预留：厂区/车间（建议横图）</div>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">改造</div>
-              <div class="card-title">老线改造适配</div>
-              <div class="card-desc">结合现场限制与既有系统，优化接口与安装方案，减少停机与施工难度。</div>
+
+          <!-- 02 -->
+          <div class="cap-item is-reverse">
+            <div class="cap-text">
+              <div class="cap-kicker">02 / 生产设备</div>
+              <h2 class="cap-title">加工与焊接设备 · 支撑关键工序</h2>
+              <p class="cap-desc">
+                厂内配置多类生产与加工设备，覆盖焊接、成型与机械加工等环节，
+                包括各类焊机、埋弧焊系统、数控加工中心及卷管机 три等，满足结构件加工、设备制造与模块化预制需要。
+              </p>
+              <ul class="cap-list">
+                <li>加工中心：关键零部件加工与精度保障</li>
+                <li>卷管机：筒体/管件成型与工况适配</li>
+                <li>埋弧焊/焊机：焊接效率与焊缝质量控制</li>
+              </ul>
+            </div>
+
+            <div class="cap-media">
+              <div class="cap-photo ph">
+                <div class="cap-photo-tip">图片预留：加工设备/作业现场</div>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">交付</div>
-              <div class="card-title">工程化交付</div>
-              <div class="card-desc">以“能验收、能运行、可维护”为导向，避免“一套方案套所有现场”。</div>
+
+          <!-- 03 -->
+          <div class="cap-item">
+            <div class="cap-text">
+              <div class="cap-kicker">03 / 设计支撑</div>
+              <h2 class="cap-title">技术团队 · 方案深化与交付协同</h2>
+              <p class="cap-desc">
+                公司设有技术与设计团队，围绕项目工况开展方案论证、图纸深化与接口协调，
+                支持制造端工艺落地与交付端安装调试配合，确保方案与现场边界一致。
+              </p>
+              <ul class="cap-list">
+                <li>方案与图纸深化：面向工况与安装边界</li>
+                <li>制造协同：关键尺寸、接口、材料与防腐选型</li>
+                <li>现场配合：调试参数、验收资料与问题闭环</li>
+              </ul>
+            </div>
+
+            <div class="cap-media">
+              <div class="cap-photo ph">
+                <div class="cap-photo-tip">图片预留：办公室/设计人员照片</div>
+              </div>
             </div>
           </div>
+
         </div>
 
-        <div class="center">
-          <a class="btn primary" href="../contact.html">咨询定制方案</a>
+        <!-- 底部行动区（可选，但很加分） -->
+        <div class="cap-actions">
+          <a class="btn primary" href="../contact.html">获取方案与报价</a>
+          <a class="btn outline" href="../cases.html">查看工程案例</a>
         </div>
+
       </div>
     </section>
+
   </main>
 
-  <!-- ✅ 页脚：全部 ../ -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-col">
@@ -410,6 +359,7 @@
         <a class="footer-link" href="../contact.html">联系我们</a>
       </div>
     </div>
+
     <div class="container footer-bottom">
       <div>© <span id="y"></span> 河北中润轩机械设备有限公司 · 保留所有权利</div>
       <div>备案号：冀ICP备XXXXXXX号（示例）</div>

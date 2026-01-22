@@ -3,64 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>公司简介 | 中润轩机械</title>
-  <meta name="description" content="河北中润轩机械设备有限公司专注工业环保与资源高效利用，面向冶金及相关工业场景，提供从方案到交付的系统解决方案与一体化服务。" />
-  <meta name="keywords" content="中润轩机械,公司简介,冶金环保,水处理,除尘系统,煤气回收,非标定制" />
+  <title>关于我们 | 中润轩机械</title>
+  <meta name="description" content="河北中润轩机械设备有限公司专注工业环保与资源高效利用，面向冶金及相关工业场景，提供工程型系统解决方案。" />
+  <meta name="keywords" content="中润轩机械,公司简介,工业环保,冶金环保,除尘系统,水处理设备" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 
+  <style>
+    /* ===== Hero ===== */
+    .page-hero{
+      padding:56px 0 30px;
+      background:
+        radial-gradient(1100px 420px at 18% 18%, rgba(32,138,204,.22), transparent 55%),
+        linear-gradient(180deg,#0b1220 0%,#0f172a 70%,#0b1220 100%);
+      color:#f8fafc;
+    }
+    .breadcrumbs{
+      font-size:12px;
+      color:rgba(248,250,252,.72);
+      margin-bottom:10px;
+    }
+    .breadcrumbs a{
+      color:rgba(248,250,252,.92);
+      text-decoration:underline;
+      text-decoration-color:rgba(248,250,252,.25);
+    }
+    .hero-title{
+      font-size:34px;
+      font-weight:900;
+      line-height:1.15;
+      margin:0 0 10px;
+    }
+    .hero-lead{
+      max-width:980px;
+      color:rgba(248,250,252,.86);
+      margin:0;
+    }
+    /* ===== 公司简介 · 极简版（腾讯风） ===== */
+.about-simple {
+  padding: 80px 0 90px;
+  background: #ffffff;
+}
+
+.about-container {
+  max-width: 880px;        /* 核心：控制行宽 */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 6px;      /* 关键：拉开字距 */
+  color: #0f172a;
+  margin-bottom: 56px;
+}
+
+
+.about-content {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #374151;
+}
+
+.about-content p {
+  margin-bottom: 26px;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 26px;
+    margin-bottom: 36px;
+  }
+
+  .about-content {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h1 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.section-title span {
+  display: inline-block;
+  width: 48px;
+  height: 3px;
+  background-color: #2563eb; /* 用你的网站主蓝色 */
+  border-radius: 2px;
+}
+
+  </style>
 </head>
 
 <body>
-  <!-- 顶部条 -->
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="topbar-left">
-        <span>服务热线：<a href="tel:0317-4623118">0317-4623118</a></span>
-        <span class="sep">|</span>
-        <span>邮箱：<a href="mailto:zrx8828@126.com">zrx8828@126.com</a></span>
-      </div>
-      <div class="topbar-right">
-        <a class="lang active" href="../index.html">中文</a>
-        <span class="sep">|</span>
-        <a class="lang" href="../en/index.html">EN</a>
-      </div>
+
+<!-- 顶部条 -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div>
+      服务热线：<a href="tel:0317-4623118">0317-4623118</a>
+      <span class="sep">|</span>
+      邮箱：<a href="mailto:zrx8828@126.com">zrx8828@126.com</a>
+    </div>
+    <div>
+      <a class="lang active" href="../index.html">中文</a>
+      <span class="sep">|</span>
+      <a class="lang" href="../en/index.html">EN</a>
     </div>
   </div>
+</div>
 
-  <!-- 导航 -->
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="../index.html">
-        <img class="brand-logo" src="../assets/img/logo.svg" alt="中润轩机械">
-        <div class="brand-text">
-          <div class="brand-name">中润轩机械</div>
-          <div class="brand-sub">Zhongrunxuan Machinery</div>
-        </div>
-      </a>
+<!-- 导航 -->
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <img class="brand-logo" src="../assets/img/logo.svg" alt="中润轩机械">
+      <div class="brand-text">
+        <div class="brand-name">中润轩机械</div>
+        <div class="brand-sub">Zhongrunxuan Machinery</div>
+      </div>
+    </a>
 
-      <nav class="nav" aria-label="主导航">
+    <nav class="nav" aria-label="主导航">
         <a class="nav-link" href="../index.html">首页</a>
 
         <div class="nav-dd" data-dd>
-          <a class="nav-link active" href="../about.html">关于我们</a>
-          <div class="dd-panel">
-            <a class="dd-item active" href="../about/intro.html">公司简介</a>
-            <a class="dd-item" href="../about/capability.html">制造能力</a>
-            <a class="dd-item" href="../about/honor.html">资质荣誉</a>
-            <a class="dd-item" href="../about/culture.html">企业文化</a>
-          </div>
+          <a class="nav-link active" href="../about/intro.html">关于我们</a>
         </div>
 
         <div class="nav-dd" data-dd>
           <a class="nav-link" href="../products.html">产品中心</a>
           <div class="dd-panel dd-grid">
             <a class="dd-item" href="../products/water-treatment.html">水处理设备与系统</a>
-            <a class="dd-item" href="../products/cyclone-dust-collector.html">高效旋风除尘系统</a>
             <a class="dd-item" href="../products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
-            <a class="dd-item" href="../products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
             <a class="dd-item" href="../products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
-            <a class="dd-item" href="../products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+            <a class="dd-item" href="../products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
+            <a class="dd-item" href="../products/cyclone-dust-collector.html">高效旋风除尘系统</a>
             <a class="dd-item" href="../products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+            <a class="dd-item" href="../products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
             <a class="dd-item" href="../products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
             <a class="dd-item" href="../products/custom-solution.html">非标定制解决方案</a>
           </div>
@@ -71,109 +162,66 @@
         <a class="nav-link" href="../contact.html">联系我们</a>
       </nav>
 
-      <button class="nav-toggle" data-nav-toggle aria-label="打开菜单">☰</button>
+    <button class="nav-toggle" data-nav-toggle>☰</button>
+  </div>
+</header>
+
+<main class="main">
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+        <div class="breadcrumbs"><a href="../index.html">首页</a> / <a href="../about/intro.html">关于我们</a> </div>
+      <h1 class="hero-title">关于我们</h1>
+
+      <!-- 顶部四入口（方案一） -->
+      <div class="chips" aria-label="关于我们导航">
+        <a class="chip primary" href="./intro.html">公司简介</a>
+        <a class="chip" href="./capability.html">制造能力</a>
+        <a class="chip" href="./honor.html">资质荣誉</a>
+        <a class="chip" href="./culture.html">企业文化</a>
+      </div>
+
     </div>
+  </section>
 
-    <!-- ✅ 修复：移动端菜单 active 应该在“关于我们” -->
-    <div class="mnav" data-mnav>
-      <a href="../index.html" class="mnav-link">首页</a>
-      <a href="../about.html" class="mnav-link active">关于我们</a>
-      <a href="../products.html" class="mnav-link">产品中心</a>
-      <a href="../cases.html" class="mnav-link">工程案例</a>
-      <a href="../news.html" class="mnav-link">新闻中心</a>
-      <a href="../contact.html" class="mnav-link">联系我们</a>
-      <div class="mnav-lang">
-        <a class="lang active" href="../index.html">中文</a>
-        <span class="sep">|</span>
-        <a class="lang" href="../en/index.html">EN</a>
-      </div>
+  <!-- 内容 -->
+  <section class="about-simple">
+  <div class="about-container">
+    <div class="section-title">
+  <h1>公司简介</h1>
+  <span></span>
+</div>
+    <div class="about-content">
+      <p>
+        河北中润轩机械设备有限公司是一家集设计、研发、制造与现场安装于一体的环保型高新技术企业，
+        公司位于河北省献县环保产业基地工业开发区，长期服务于冶金及相关工业领域的环保工程需求。
+      </p>
+
+      <p>
+        公司拥有多项自主知识产权及专有技术产品，承压一体化污水处理装置、煤气除尘器、
+        环保除尘及烟气脱硫脱硝等系列产品已在多个工程项目中稳定应用，
+        并获得用户的广泛认可。
+      </p>
+
+      <p>
+        公司坚持以客户需求为导向，持续完善产品与服务体系，
+        通过不断的技术改进与工程实践积累，形成了以质量为核心、以工程交付为目标的发展路径。
+        多年来，在广大用户与合作伙伴的支持下，公司实现了持续稳健的发展，
+        多项新产品及专利产品已应用于国内外项目。
+      </p>
+
+      <p>
+        中润轩机械秉承“求实创新、开拓进取、真诚合作、互利共赢”的理念，
+        持续提升产品质量与系统能力，致力于为客户提供可靠、可持续运行的工业环保解决方案。
+      </p>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main class="main">
-    <!-- ✅ Hero -->
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumbs"><a href="../index.html">首页</a> / <a href="../about.html">关于我们</a> / 公司简介</div>
-        <h1 class="hero-title">公司简介</h1>
-        <p class="hero-lead">
-          河北中润轩机械设备有限公司专注于工业环保与资源高效利用的工程型业务，
-          面向冶金及相关工业场景，提供从方案到交付的系统解决方案。
-        </p>
-      </div>
-    </section>
+</main>
 
-    <!-- 内容 -->
-    <section class="section">
-      <div class="container">
-
-        <!-- 概览 -->
-        <div class="section-head" id="overview">
-          <h2 class="h2">概览</h2>
-          <p class="p">
-            以工程落地为导向，强调运行稳定、适配性与可维护性，提供方案设计、成套供货、安装调试与运维支持的一体化服务。
-          </p>
-        </div>
-
-        <!-- 你的原三卡（保留） -->
-        <div class="grid cards-3" style="margin-top:18px;">
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">定位</div>
-              <div class="card-title">工程型环保装备与系统集成</div>
-              <div class="card-desc">以工程落地为导向，强调运行稳定、适配性与可维护性。</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">范围</div>
-              <div class="card-title">方案 · 制造 · 交付 · 运维</div>
-              <div class="card-desc">覆盖方案设计、设备制造、现场交付与运行支持等关键环节。</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <div class="tag">行业</div>
-              <div class="card-title">冶金及相关工业场景</div>
-              <div class="card-desc">水处理、除尘与烟气治理、煤气系统等方向，支持非标定制。</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 两栏卡片 -->
-        <div class="grid" style="margin-top:14px;">
-          <div class="card" id="what" style="padding:18px;">
-            <h2 class="h3" style="margin-top:0;">我们能做什么</h2>
-            <ul class="list" style="margin: 8px 0 0; padding-left:18px;">
-              <li>工艺咨询与系统方案设计（关键参数核算、可维护性校核）</li>
-              <li>成套装备与非标设备制造（项目化制造与交期可控）</li>
-              <li>现场安装指导与系统调试投运（按合同范围协同）</li>
-              <li>运行维护支持与优化改造（稳定运行与长期价值）</li>
-            </ul>
-          </div>
-
-          <div class="card" id="idea" style="padding:18px;">
-            <h2 class="h3" style="margin-top:0;">我们的理念</h2>
-            <ul class="list" style="margin: 8px 0 0; padding-left:18px;">
-              <li><strong>工况导向</strong>：尊重现场条件，避免“一套方案套所有现场”</li>
-              <li><strong>交付可控</strong>：节点管理与质量追溯，确保验收与运行表现</li>
-              <li><strong>长期可用</strong>：关注稳定运行与可维护性，降低综合运维成本</li>
-            </ul>
-
-            <div class="actions" style="margin-top:14px;">
-              <a class="btn primary" href="../contact.html">获取方案与报价</a>
-              <a class="btn outline" href="../cases.html">查看工程案例</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <!-- ✅ 页脚：注意这里全部用 ../（因为当前页面在 about/ 目录下） -->
+  <!-- 页脚（对齐你全站，包含旋风&非标） -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-col">
@@ -184,15 +232,15 @@
 
       <div class="footer-col">
         <div class="footer-title">产品中心</div>
-        <a class="footer-link" href="../products/water-treatment.html">水处理设备与系统</a>
-        <a class="footer-link" href="../products/cyclone-dust-collector.html">高效旋风除尘系统</a>
-        <a class="footer-link" href="../products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
-        <a class="footer-link" href="../products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
-        <a class="footer-link" href="../products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
-        <a class="footer-link" href="../products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
-        <a class="footer-link" href="../products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
-        <a class="footer-link" href="../products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
-        <a class="footer-link" href="../products/custom-solution.html">非标定制解决方案</a>
+        <a class="footer-link" href="products/water-treatment.html">水处理设备与系统</a>
+        <a class="footer-link" href="products/cyclone-dust-collector.html">高效旋风除尘系统</a>
+        <a class="footer-link" href="products/jun_ya_mei_qi.html">“高效节能”型均压煤气全回收技术</a>
+        <a class="footer-link" href="products/gan_fa_chu_chen.html">高炉干法除尘系统</a>
+        <a class="footer-link" href="products/xiu_feng_fang_san.html">高炉休风放散煤气综合治理技术</a>
+        <a class="footer-link" href="products/ran_shao_mo_xing.html">高炉热风炉“熵减”人工智能燃烧模型</a>
+        <a class="footer-link" href="products/huan_jing_chu_chen.html">“高效节能”型环境除尘系统</a>
+        <a class="footer-link" href="products/wu_rao_dong_huan_lu.html">高炉热风炉无扰动换炉技术</a>
+        <a class="footer-link" href="products/custom-solution.html">非标定制解决方案</a>
       </div>
 
       <div class="footer-col">
@@ -200,15 +248,16 @@
         <div class="footer-text">电话：0317-4623118</div>
         <div class="footer-text">邮箱：zrx8828@126.com</div>
         <div class="footer-text">地址：河北省沧州市献县106国道西、陈庄镇陈西村</div>
-        <a class="footer-link" href="../contact.html">联系我们</a>
+        <a class="footer-link" href="contact.html">联系我们</a>
       </div>
     </div>
+
     <div class="container footer-bottom">
       <div>© <span id="y"></span> 河北中润轩机械设备有限公司 · 保留所有权利</div>
       <div>备案号：冀ICP备XXXXXXX号（示例）</div>
     </div>
   </footer>
 
-  <script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
