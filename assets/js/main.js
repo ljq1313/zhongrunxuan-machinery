@@ -54,19 +54,23 @@
 
   // auto play
   let timer = null;
+
   function start() {
+    if (timer) return; // ✅ 防止重复 setInterval 叠加
     timer = window.setInterval(() => setActive(idx + 1), 6000);
   }
+
   function stop() {
     if (timer) window.clearInterval(timer);
     timer = null;
   }
+
   function restart() {
     stop();
     start();
   }
 
   slider.addEventListener("mouseenter", stop);
-  slider.addEventListener("mouseleave", start);
+  slider.addEventListener("mouseleave", restart); // ✅ 用 restart 更稳
   start();
 })();
